@@ -1,0 +1,2178 @@
+
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+<meta content='no-cache' name='turbolinks-cache-control'>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5d3af624b0","applicationID":"106422814","transactionName":"c1tbQBMMXF9XRE5HXVFaRhsJDF1W","queueTime":0,"applicationTime":55,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"5d3af624b0",applicationID:"106422814"};;/*! For license information please see nr-loader-rum-1.266.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555:(e,t,r)=>{"use strict";r.d(t,{Vp:()=>c,fn:()=>s,x1:()=>u});var n=r(384),i=r(8122);const o={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){try{const t=c(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}function c(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function u(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.a)(t,o);const r=(0,n.nY)(e);r&&(r.info=a[e])}},9417:(e,t,r)=>{"use strict";r.d(t,{D0:()=>g,gD:()=>h,xN:()=>p});var n=r(993);const i=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var o=r(2614),a=r(944),s=r(384),c=r(8122);const u="[data-nr-mask]",d=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},feature_flags:[],generic_events:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},harvest:{tooManyRequestsDelay:60},jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},logging:{enabled:!0,harvestTimeSeconds:10,autoStart:!0,level:n.p_.INFO},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:o.wk,inactiveMs:o.BB},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){i(t)?e.mask_selector="".concat(t,",").concat(u):""===t||null===t?e.mask_selector=u:(0,a.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){i(t)?e.block_selector+=",".concat(t):""!==t&&(0,a.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,a.R)(7,t)}},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},soft_navigations:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},ssl:void 0}},l={},f="All configuration objects require an agent identifier!";function g(e){if(!e)throw new Error(f);if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function p(e,t){if(!e)throw new Error(f);l[e]=(0,c.a)(t,d());const r=(0,s.nY)(e);r&&(r.init=l[e])}function h(e,t){if(!e)throw new Error(f);var r=g(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}},3371:(e,t,r)=>{"use strict";r.d(t,{V:()=>f,f:()=>l});var n=r(8122),i=r(384),o=r(6154),a=r(9324);let s=0;const c={buildEnv:a.F3,distMethod:a.Xs,version:a.xv,originTime:o.WN},u={customTransaction:void 0,disabled:!1,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,onerror:void 0,origin:""+o.gm.location,ptid:void 0,releaseIds:{},appMetadata:{},session:void 0,denyList:void 0,timeKeeper:void 0,obfuscator:void 0},d={};function l(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!d[e])throw new Error("Runtime for ".concat(e," was never set"));return d[e]}function f(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");d[e]={...(0,n.a)(t,u),...c},Object.hasOwnProperty.call(d[e],"harvestCount")||Object.defineProperty(d[e],"harvestCount",{get:()=>++s});const r=(0,i.nY)(e);r&&(r.runtime=d[e])}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>o,xv:()=>n});const n="1.266.0",i="PROD",o="CDN"},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>c,RI:()=>i,Vr:()=>d,WN:()=>l,bv:()=>o,gm:()=>a,mw:()=>s,sb:()=>u});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,o="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),s=Boolean("hidden"===a?.document?.visibilityState),c=/iPad|iPhone|iPod/.test(a.navigator?.userAgent),u=c&&"undefined"==typeof SharedWorker,d=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),!!a.navigator?.sendBeacon),l=Date.now()-(0,n.t)()},4777:(e,t,r)=>{"use strict";r.d(t,{J:()=>o});var n=r(944);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.R)(8);this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((([e,t])=>{Object.keys(i).includes(e)&&(this.sharedContext[e]=t)}))}catch(e){(0,n.R)(9,e)}}}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>c,Ze:()=>l,x3:()=>u});var n=r(7836),i=r(3606),o=r(860),a=r(2646);const s={};function c(e,t){const r={staged:!1,priority:o.P[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function u(e,t){e&&s[e]&&(s[e].get(t)&&s[e].delete(t),g(e,t,!1),s[e].size&&f(e))}function d(e){if(!e)throw new Error("agentIdentifier required");s[e]||(s[e]=new Map)}function l(e="",t="feature",r=!1){if(d(e),!e||!s[e].get(t)||r)return g(e,t);s[e].get(t).staged=!0,f(e)}function f(e){const t=Array.from(s[e]);t.every((([e,t])=>t.staged))&&(t.sort(((e,t)=>e[1].priority-t[1].priority)),t.forEach((([t])=>{s[e].delete(t),g(e,t)})))}function g(e,t,r=!0){const o=e?n.ee.get(e):n.ee,s=i.i.handlers;if(!o.aborted&&o.backlog&&s){if(r){const e=o.backlog[t],r=s[t];if(r){for(let t=0;e&&t<e.length;++t)p(e[t],r);Object.entries(r).forEach((([e,t])=>{Object.values(t||{}).forEach((t=>{t[0]?.on&&t[0]?.context()instanceof a.y&&t[0].on(e,t[1])}))}))}}o.isolatedBacklog||delete s[t],o.backlog[t]=null,o.emit("drain-"+t,[])}}function p(e,t){var r=e[1];Object.values(t[r]||{}).forEach((t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],o=e[2];n.apply(i,o)}}))}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>c,ee:()=>u});var n=r(384),i=r(8990),o=r(3371),a=r(2646),s=r(5607);const c="nr@context:".concat(s.W),u=function e(t,r){var n={},s={},d={},l=!1;try{l=16===r.length&&(0,o.f)(r).isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=g(n),c=h(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var p=v()[s[e]];p&&p.push([f,e,r,a]);return a},get:m,listeners:h,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach((([e,n])=>{s[n]=t,t in r||(r[t]=[])}))},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach((e=>{delete f.backlog[e]}))},isBuffering:function(e){return!!v()[s[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof a.y?e:e?(0,i.I)(e,c,(()=>new a.y(c))):new a.y(c)}function p(e,t){n[e]=h(e).concat(t)}function h(e){return n[e]||[]}function m(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),d=(0,n.Zm)();d.ee||(d.ee=u)},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>o});var n=r(9908);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.d,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.d);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";r.d(t,{DD:()=>c,jT:()=>a,sp:()=>s});var n=r(6154);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n.gm.addEventListener("test",null,e),n.gm.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t,r=!1,n){window.addEventListener(e,t,a(r,n))}function c(e,t,r=!1,n){document.addEventListener(e,t,a(r,n))}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>s,bz:()=>a});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>a,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>s,uh:()=>i,wk:()=>o});const n="NRBA",i="SESSION",o=144e5,a=18e5,s={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},944:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.debug&&console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t)}r.d(t,{R:()=>n})},5284:(e,t,r)=>{"use strict";r.d(t,{t:()=>c,B:()=>s});var n=r(7836),i=r(6154);const o="newrelic";const a=new Set,s={};function c(e,t){const r=n.ee.get(t);s[t]??={},e&&"object"==typeof e&&(a.has(t)||(r.emit("rumresp",[e]),s[t]=e,a.add(t),function(e={}){try{i.gm.dispatchEvent(new CustomEvent(o,{detail:e}))}catch(e){}}({loaded:!0})))}},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout((()=>{i=clearTimeout(i)}),t)),n||(clearTimeout(i),i=setTimeout((()=>{e.apply(this,r)}),t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,sB:()=>a});var n=r(3878);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.sp)("load",e,t)}function a(e){if(i())return e();(0,n.DD)("DOMContentLoaded",e)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>o,US:()=>d,Zm:()=>a,bQ:()=>c,dV:()=>s,nY:()=>u,pV:()=>l});var n=r(6154),i=r(1863);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function s(){let e=a();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},2843:(e,t,r)=>{"use strict";r.d(t,{u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3434:(e,t,r)=>{"use strict";r.d(t,{YM:()=>c});var n=r(7836),i=r(5607);const o="nr@original:".concat(i.W);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}},993:(e,t,r)=>{"use strict";r.d(t,{ET:()=>o,p_:()=>i});var n=r(860);const i={ERROR:"ERROR",WARN:"WARN",INFO:"INFO",DEBUG:"DEBUG",TRACE:"TRACE"},o="log";n.K.logging},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>s,rs:()=>i,xV:()=>a,z_:()=>o});const n=r(860).K.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K.pageViewEvent},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K.pageViewTiming},6344:(e,t,r)=>{"use strict";r.d(t,{G4:()=>i});var n=r(2614);r(860).K.sessionReplay;const i={RECORD:"recordReplay",PAUSE:"pauseReplay",REPLAY_RUNNING:"replayRunning",ERROR_DURING_REPLAY:"errorDuringReplay"};n.g.ERROR,n.g.FULL,n.g.OFF},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(7836);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7603:(e,t,r)=>{"use strict";r.d(t,{j:()=>P});var n=r(860),i=r(2555),o=r(3371),a=r(9908),s=r(7836),c=r(1687),u=r(5289),d=r(6154),l=r(944),f=r(3969),g=r(384),p=r(6344);const h=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start",p.G4.RECORD,p.G4.PAUSE,"log","wrapLogger"],m=["setErrorHandler","finished","addToTrace","addRelease"];var v=r(1863),b=r(2614),y=r(993);var w=r(2646),R=r(3434);function A(e,t,r,n){if("object"!=typeof t||!t||"string"!=typeof r||!r||"function"!=typeof t[r])return(0,l.R)(29);const i=function(e){return(e||s.ee).get("logger")}(e),o=(0,R.YM)(i),a=new w.y(s.P);return a.level=n.level,a.customAttributes=n.customAttributes,o.inPlace(t,[r],"wrap-logger-",a),i}function x(){const e=(0,g.pV)();h.forEach((t=>{e[t]=(...r)=>function(t,...r){let n=[];return Object.values(e.initializedAgents).forEach((e=>{e&&e.api?e.exposed&&e.api[t]&&n.push(e.api[t](...r)):(0,l.R)(38,t)})),n.length>1?n:n[0]}(t,...r)}))}const E={};function _(e,t,g=!1){t||(0,c.Ak)(e,"api");const h={};var w=s.ee.get(e),R=w.get("tracer");E[e]=b.g.OFF,w.on(p.G4.REPLAY_RUNNING,(t=>{E[e]=t}));var x="api-",_=x+"ixn-";function N(t,r,n,o){const a=(0,i.Vp)(e);return null===r?delete a.jsAttributes[t]:(0,i.x1)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),S(x,n,!0,o||null===r?"session":void 0)(t,r)}function T(){}h.log=function(e,{customAttributes:t={},level:r=y.p_.INFO}={}){(0,a.p)(f.xV,["API/log/called"],void 0,n.K.metrics,w),function(e,t,r={},i=y.p_.INFO){(0,a.p)(f.xV,["API/logging/".concat(i.toLowerCase(),"/called")],void 0,n.K.metrics,e),(0,a.p)(y.ET,[(0,v.t)(),t,r,i],void 0,n.K.logging,e)}(w,e,t,r)},h.wrapLogger=(e,t,{customAttributes:r={},level:i=y.p_.INFO}={})=>{(0,a.p)(f.xV,["API/wrapLogger/called"],void 0,n.K.metrics,w),A(w,e,t,{customAttributes:r,level:i})},m.forEach((e=>{h[e]=S(x,e,!0,"api")})),h.addPageAction=S(x,"addPageAction",!0,n.K.genericEvents),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,o.f)(e).customTransaction=(r||"http://custom.transaction")+t,S(x,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t,r=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return N(e,t,"setCustomAttribute",r);(0,l.R)(40,typeof t)}else(0,l.R)(39,typeof e)},h.setUserId=function(e){if("string"==typeof e||null===e)return N("enduser.id",e,"setUserId",!0);(0,l.R)(41,typeof e)},h.setApplicationVersion=function(e){if("string"==typeof e||null===e)return N("application.version",e,"setApplicationVersion",!1);(0,l.R)(42,typeof e)},h.start=()=>{try{(0,a.p)(f.xV,["API/start/called"],void 0,n.K.metrics,w),w.emit("manual-start-all")}catch(e){(0,l.R)(23,e)}},h[p.G4.RECORD]=function(){(0,a.p)(f.xV,["API/recordReplay/called"],void 0,n.K.metrics,w),(0,a.p)(p.G4.RECORD,[],void 0,n.K.sessionReplay,w)},h[p.G4.PAUSE]=function(){(0,a.p)(f.xV,["API/pauseReplay/called"],void 0,n.K.metrics,w),(0,a.p)(p.G4.PAUSE,[],void 0,n.K.sessionReplay,w)},h.interaction=function(e){return(new T).get("object"==typeof e?e:{})};const k=T.prototype={createTracer:function(e,t){var r={},i=this,o="function"==typeof t;return(0,a.p)(f.xV,["API/createTracer/called"],void 0,n.K.metrics,w),g||(0,a.p)(_+"tracer",[(0,v.t)(),e,r],i,n.K.spa,w),function(){if(R.emit((o?"":"no-")+"fn-start",[(0,v.t)(),i,o],r),o)try{return t.apply(this,arguments)}catch(e){const t="string"==typeof e?new Error(e):e;throw R.emit("fn-err",[arguments,this,t],r),t}finally{R.emit("fn-end",[(0,v.t)()],r)}}}};function S(e,t,r,i){return function(){return(0,a.p)(f.xV,["API/"+t+"/called"],void 0,n.K.metrics,w),i&&(0,a.p)(e+t,[(0,v.t)(),...arguments],r?null:this,i,w),r?void 0:this}}function j(){r.e(296).then(r.bind(r,8778)).then((({setAPI:t})=>{t(e),(0,c.Ze)(e,"api")})).catch((e=>{(0,l.R)(27,e),w.abort()}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{k[e]=S(_,e,void 0,g?n.K.softNav:n.K.spa)})),h.setCurrentRouteName=g?S(_,"routeName",void 0,n.K.softNav):S(x,"routeName",!0,n.K.spa),h.noticeError=function(t,r){"string"==typeof t&&(t=new Error(t)),(0,a.p)(f.xV,["API/noticeError/called"],void 0,n.K.metrics,w),(0,a.p)("err",[t,(0,v.t)(),!1,r,!!E[e]],void 0,n.K.jserrors,w)},d.RI?(0,u.GG)((()=>j()),!0):j(),h}var N=r(9417),T=r(8122);const k={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},S={};var j=r(5284);const I=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let O=!1;function P(e,t={},r,n){let{init:a,info:c,loader_config:u,runtime:l={},exposed:f=!0}=t;l.loaderType=r;const p=(0,g.pV)();c||(a=p.init,c=p.info,u=p.loader_config),(0,N.xN)(e.agentIdentifier,a||{}),function(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");S[e]=(0,T.a)(t,k);const r=(0,g.nY)(e);r&&(r.loader_config=S[e])}(e.agentIdentifier,u||{}),c.jsAttributes??={},d.bv&&(c.jsAttributes.isWorker=!0),(0,i.x1)(e.agentIdentifier,c);const h=(0,N.D0)(e.agentIdentifier),m=[c.beacon,c.errorBeacon];O||(h.proxy.assets&&(I(h.proxy.assets),m.push(h.proxy.assets)),h.proxy.beacon&&m.push(h.proxy.beacon),x(),(0,g.US)("activatedFeatures",j.B),e.runSoftNavOverSpa&&=!0===h.soft_navigations.enabled&&h.feature_flags.includes("soft_nav")),l.denyList=[...h.ajax.deny_list||[],...h.ajax.block_internal?m:[]],l.ptid=e.agentIdentifier,(0,o.V)(e.agentIdentifier,l),e.ee=s.ee.get(e.agentIdentifier),void 0===e.api&&(e.api=_(e.agentIdentifier,n,e.runSoftNavOverSpa)),void 0===e.exposed&&(e.exposed=f),O=!0}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},860:(e,t,r)=>{"use strict";r.d(t,{K:()=>n,P:()=>i});const n={ajax:"ajax",genericEvents:"generic_events",jserrors:"jserrors",logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.spa]:5,[n.ajax]:6,[n.sessionTrace]:7,[n.softNav]:8,[n.sessionReplay]:9,[n.logging]:10,[n.genericEvents]:11}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.266.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.266.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={296:"sha512-PGRDTz9K3RHud9c5GfuWUsxiNfaPotohUrQqIcwtMgUrIVBxVdbZvncVGosT+JI+8ixgyK3LRGBTQ+jg2CoTsg=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={840:0,374:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.266.0.PROD"]=self["webpackChunk:NRBA-1.266.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(944),t=i(6344),r=i(9566);class n{agentIdentifier;constructor(e=(0,r.LA)(16)){this.agentIdentifier=e}#e(t,...r){if("function"==typeof this.api?.[t])return this.api[t](...r);(0,e.R)(35,t)}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e(t.G4.RECORD)}pauseReplay(){return this.#e(t.G4.PAUSE)}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}log(e,t){return this.#e("log",e,t)}wrapLogger(e,t,r){return this.#e("wrapLogger",e,t,r)}}var o=i(860),a=i(9417);const s=Object.values(o.K);function c(e){const t={};return s.forEach((r=>{t[r]=function(e,t){return!0===(0,a.gD)(t,"".concat(e,".enabled"))}(r,e)})),t}var u=i(7603);var d=i(1687),l=i(4234),f=i(5289),g=i(6154),p=i(384);const h=e=>g.RI&&!0===(0,a.gD)(e,"privacy.cookies_enabled");function m(e){return!!(0,p.dV)().o.MO&&h(e)&&!0===(0,a.gD)(e,"session_trace.enabled")}var v=i(6389);class b extends l.W{constructor(e,t,r,n=!0){super(e,t,r),this.auto=n,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,a.gD)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto?(0,d.Ak)(e,r):this.ee.on("manual-start-all",(0,v.J)((()=>{(0,d.Ak)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()})))}importAggregator(t={}){if(this.featAggregate||!this.auto)return;let r;this.onAggregateImported=new Promise((e=>{r=e}));const n=async()=>{let n;try{if(h(this.agentIdentifier)){const{setupAgentSession:e}=await i.e(296).then(i.bind(i,3861));n=e(this.agentIdentifier)}}catch(t){(0,e.R)(20,t),this.ee.emit("internal-error",[t]),this.featureName===o.K.sessionReplay&&this.abortHandler?.()}try{if(!this.#t(this.featureName,n))return(0,d.Ze)(this.agentIdentifier,this.featureName),void r(!1);const{lazyFeatureLoader:e}=await i.e(296).then(i.bind(i,6103)),{Aggregate:o}=await e(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,t),r(!0)}catch(t){(0,e.R)(34,t),this.abortHandler?.(),(0,d.Ze)(this.agentIdentifier,this.featureName,!0),r(!1),this.ee&&this.ee.abort()}};g.RI?(0,f.GG)((()=>n()),!0):n()}#t(e,t){switch(e){case o.K.sessionReplay:return m(this.agentIdentifier)&&!!t;case o.K.sessionTrace:return!!t;default:return!0}}}var y=i(6630);class w extends b{static featureName=y.T;constructor(e,t,r=!0){super(e,t,y.T,r),this.importAggregator()}}var R=i(4777);class A extends R.J{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,Object.entries(e||{}).forEach((([e,r])=>{t[e]=x(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,Object.keys(r||{}).forEach((e=>{if("count"!==e){var t=a[e],n=r[e];n&&!n.c?a[e]=x(n.t,t):a[e]=function(e,t){if(!t)return e;t.c||(t=E(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(n,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=x(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=Object.values(this.aggregatedData[r]||{}),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function x(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=E(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function E(e){return{t:e,min:e,max:e,sos:e*e,c:1}}var _=i(9908),N=i(2843),T=i(3878),k=i(782),S=i(1863);class j extends b{static featureName=k.T;constructor(e,t,r=!0){super(e,t,k.T,r),g.RI&&((0,N.u)((()=>(0,_.p)("docHidden",[(0,S.t)()],void 0,k.T,this.ee)),!0),(0,T.sp)("pagehide",(()=>(0,_.p)("winPagehide",[(0,S.t)()],void 0,k.T,this.ee))),this.importAggregator())}}var I=i(3969);class O extends b{static featureName=I.TZ;constructor(e,t,r=!0){super(e,t,I.TZ,r),this.importAggregator()}}new class extends n{constructor(t,r){super(r),g.gm?(this.sharedAggregator=new A({agentIdentifier:this.agentIdentifier}),this.features={},(0,p.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(w),this.runSoftNavOverSpa=[...this.desiredFeatures].some((e=>e.featureName===o.K.softNav)),(0,u.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}run(){try{const t=c(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>o.P[e.featureName]-o.P[t.featureName])),r.forEach((r=>{if(!t[r.featureName]&&r.featureName!==o.K.pageViewEvent)return;if(this.runSoftNavOverSpa&&r.featureName===o.K.spa)return;if(!this.runSoftNavOverSpa&&r.featureName===o.K.softNav)return;const n=function(e){switch(e){case o.K.ajax:return[o.K.jserrors];case o.K.sessionTrace:return[o.K.ajax,o.K.pageViewEvent];case o.K.sessionReplay:return[o.K.sessionTrace];case o.K.pageViewTiming:return[o.K.pageViewEvent];default:return[]}}(r.featureName).filter((e=>!(e in this.features)));n.length>0&&(0,e.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}))}catch(t){(0,e.R)(22,t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,p.Zm)();delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return r.ee.get(this.agentIdentifier).abort(),!1}}}({features:[w,j,O],loaderType:"lite"})})()})();</script>
+<script async src="https://cdn.fuseplatform.net/publift/tags/2/3225/fuse.js"></script>
+<title>
+Nardelli Designs
+</title>
+<!-- SEO meta tags -->
+<link href='https://www.architecturaldesigns.com/' rel='canonical'>
+<meta content='House Plans and Home Floor Plans | Architectural Designs' name='title'>
+<meta content='nardellidesigns.com' name='url'>
+<meta content='house plans,home plans,floor plans,house floor plans,homeplans,houseplans,home designs,home design,architectural designs,floorplans,blueprints, custom designs, dream homes, southern, country, beach,victorian,traditional,cottage,luxury' name='keywords'>
+<script type='application/ld+json'>
+{
+"@context": "http://schema.org",
+"@type": "Organization",
+"name": "Architectural Designs",
+"url": "https://www.nardellidesigns.com/",
+"sameAs": [
+"https://www.facebook.com/Architectural.Designs.Houseplans",
+"https://www.pinterest.com/archdesigns/",
+"https://twitter.com/adhouseplans",
+"https://www.instagram.com/adhouseplans/",
+"https://www.youtube.com/user/ADHousePlans/"
+]
+}
+</script>
+<!-- Open Graph data -->
+<meta content='Nardelli Designs' property='og:title'>
+<meta content='Nardelli Designs' property='og:site_name'>
+<meta content='https://www.nardellidesigns.com/' property='og:url'>
+<meta content='Search our collection of 30k+ house plans by over 200 designers and architects to find the perfect home plan to build. All house plans can be modified.' property='og:description'>
+<meta content='website' property='og:type'>
+<meta content='https://www.nardellidesigns.com/assets/logo-0baf58dffe24002fac28656c197c0a8e85c6725a2e01f4b4fae66e7a061726d8.png' property='og:image'>
+<meta content='1670722289810910' property='fb:app_id'>
+
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=5.0' name='viewport'>
+<link rel="stylesheet" href="https://www.architecturaldesigns.com/assets/v2.0/plans_home-86f3faa5ab3d860ad465574876a38ffe85b1c7b3e995cfc1ad5a09896db268e1.css" media="all" data-turbolinks-track="reload" />
+<script src="https://www.architecturaldesigns.com/assets/v2.0/plans_home-322ff8f036b5c0c95dfa46de9cb683173d727ee86507e64a0a4bce25dff3a7ab.js" data-turbolinks-track="reload"></script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PVK886');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-711252291"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', "AW-711252291", {"allow_enhanced_conversions":true,"user_id":null});
+  </script>
+  <!-- End Global site tag (gtag.js) -->
+
+  <!-- Pinterest Preconnect tag -->
+  <link rel="preconnect dns-prefetch" href="https://s.pinimg.com">
+  <!-- Pinterest Tag -->
+  <script>
+    !function(e){if(!window.pintrk){window.pintrk = function () {
+    window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+    n=window.pintrk;n.queue=[],n.version="3.0";var
+    t=document.createElement("script");t.async=!0,t.src=e;var
+    r=document.getElementsByTagName("script")[0];
+    r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+    pintrk('load', '2616260489367');
+    pintrk('page');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2616260489367&noscript=1" />
+  </noscript>
+  <!-- end Pinterest Tag -->
+
+  <!-- Facebook Pixel Preconnect tag -->
+  <link rel="preconnect" href="https://connect.facebook.net">
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', "430505284450891", {em: "", zp: ""});
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+  <img height="1" width="1" src="https://www.facebook.com/tr?id=430505284450891&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+
+    <!-- Below JS render auto ads on AD. Do not remove -->
+    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-9066749988729057",
+        enable_page_level_ads: true
+      });
+    </script>
+
+  <!-- TikTok pixel Preconnect tag -->
+  <script>
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+
+    ttq.load('CNE8M13C77U0KQ3M80HG');
+    ttq.page();
+  }(window, document, 'ttq');
+  </script>
+  <!-- End TikTok pixel code -->
+
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="D4lz8FsymWG3vQiMDJqwYc9k_jNdJbs6ihUm54m7hY4FdB4BEfD6Om_sKAKOlIMF8GIKRckf4j0vKj4onBABJA" />
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,500,700' rel='stylesheet'>
+<!-- Global site tag (gtag.js) - Google Analytics 4 -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', "");
+</script>
+-->
+<!-- End Global site tag (gtag.js) - Google Analytics 4 -->
+  <script type="text/javascript">
+    if(typeof gtag !== "undefined" && typeof gtag === "function") {
+    } else {
+        console.log("undefined gtag");
+    }
+  </script>
+</head>
+<body class='' data-action='home' data-ad-environment='production' data-controller='plans'>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe height='0' src='https://www.googletagmanager.com/ns.html?id=GTM-PVK886' style='display:none;visibility:hidden' width='0'></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class='env-name-production'></div>
+<p class='notice'></p>
+<p class='alert'></p>
+<header>
+<div class='megamenu hidden-xs'>
+<div class='menu-container'>
+<div class='clearfix'>
+<div class='container'>
+<div class='styles-menu-items megamenu-items'>
+<div class='row col-wrapper'>
+<div class='col-md-7 col-sm-8 border-r'>
+<h3>Top Styles</h3>
+<div class='row margin-right-2'>
+<div class='items-box-row margin-bottom-10'>
+<div class='item-banner-box'>
+<a href="/house-plans/styles/barndominium"><div class='banner-photo'>
+<img alt='Barndominium House Plans' class='img-responsive async-banner-img' data-src='https://assets.architecturaldesigns.com/plan_assets/362518694/thumb/51964HZ-rendering-001_1712669653.webp' src='https://www.architecturaldesigns.com/assets/image-placeholder-2080d58585f4049a64928937f9f3e0791f9e383071c10e71114db518b0ec3852.png'>
+</div>
+<div class='banner-title'>
+Barndominium
+</div>
+</a></div>
+<div class='item-banner-box'>
+<a href="/house-plans/styles/modern-farmhouse"><div class='banner-photo'>
+<img alt='Modern Farmhouse House Plans' class='img-responsive async-banner-img' data-src='https://assets.architecturaldesigns.com/plan_assets/363175653/thumb/790158GLV_Render01_1714577052.webp' src='https://www.architecturaldesigns.com/assets/image-placeholder-2080d58585f4049a64928937f9f3e0791f9e383071c10e71114db518b0ec3852.png'>
+</div>
+<div class='banner-title'>
+Modern Farmhouse
+</div>
+</a></div>
+<div class='item-banner-box'>
+<a href="/house-plans/styles/craftsman"><div class='banner-photo'>
+<img alt='Craftsman House Plans' class='img-responsive async-banner-img' data-src='https://assets.architecturaldesigns.com/plan_assets/342992294/thumb/800001GDP_render_front_1664811660.webp' src='https://www.architecturaldesigns.com/assets/image-placeholder-2080d58585f4049a64928937f9f3e0791f9e383071c10e71114db518b0ec3852.png'>
+</div>
+<div class='banner-title'>
+Craftsman
+</div>
+</a></div>
+<div class='item-banner-box'>
+<a href="/house-plans/styles/country"><div class='banner-photo'>
+<img alt='Country House Plans' class='img-responsive async-banner-img' data-src='https://assets.architecturaldesigns.com/plan_assets/325002017/thumb/Summer-Setrendering_1716476819.webp' src='https://www.architecturaldesigns.com/assets/image-placeholder-2080d58585f4049a64928937f9f3e0791f9e383071c10e71114db518b0ec3852.png'>
+</div>
+<div class='banner-title'>
+Country
+</div>
+</a></div>
+<div class='item-banner-box'>
+<a href="/house-plans/styles/new-american"><div class='banner-photo'>
+<img alt='New American House Plans' class='img-responsive async-banner-img' data-src='https://assets.architecturaldesigns.com/plan_assets/360045924/thumb/56543SM_Render001_1710360971.webp' src='https://www.architecturaldesigns.com/assets/image-placeholder-2080d58585f4049a64928937f9f3e0791f9e383071c10e71114db518b0ec3852.png'>
+</div>
+<div class='banner-title'>
+New American
+</div>
+</a></div>
+<div class='item-banner-box'>
+<a href="/house-plans/styles/scandinavian"><div class='banner-photo'>
+<img alt='Scandinavian House Plans' class='img-responsive async-banner-img' data-src='https://assets.architecturaldesigns.com/plan_assets/349487363/thumb/260024RVC_Render_1680893835.webp' src='https://www.architecturaldesigns.com/assets/image-placeholder-2080d58585f4049a64928937f9f3e0791f9e383071c10e71114db518b0ec3852.png'>
+</div>
+<div class='banner-title'>
+Scandinavian
+</div>
+</a></div>
+<div class='item-banner-box'>
+<a href="/house-plans/styles/mid-century-modern"><div class='banner-photo'>
+<img alt='Mid Century Modern House Plans' class='img-responsive async-banner-img' data-src='https://assets.architecturaldesigns.com/plan_assets/343535966/thumb/81730AB_Render-01_1666283001.webp' src='https://www.architecturaldesigns.com/assets/image-placeholder-2080d58585f4049a64928937f9f3e0791f9e383071c10e71114db518b0ec3852.png'>
+</div>
+<div class='banner-title'>
+Mid Century Modern
+</div>
+</a></div>
+<div class='item-banner-box'>
+<a href="/house-plans/styles/cottage"><div class='banner-photo'>
+<img alt='Cottage House Plans' class='img-responsive async-banner-img' data-src='https://assets.architecturaldesigns.com/plan_assets/358434377/thumb/677031NWL_Render001_1710862744.webp' src='https://www.architecturaldesigns.com/assets/image-placeholder-2080d58585f4049a64928937f9f3e0791f9e383071c10e71114db518b0ec3852.png'>
+</div>
+<div class='banner-title'>
+Cottage
+</div>
+</a></div>
+<div class='item-banner-box'>
+<a href="/house-plans/styles/transitional"><div class='banner-photo'>
+<img alt='Transitional House Plans' class='img-responsive async-banner-img' data-src='https://assets.architecturaldesigns.com/plan_assets/366403186/thumb/56547SM-front-rendering-02_1723643363.webp' src='https://www.architecturaldesigns.com/assets/image-placeholder-2080d58585f4049a64928937f9f3e0791f9e383071c10e71114db518b0ec3852.png'>
+</div>
+<div class='banner-title'>
+Transitional
+</div>
+</a></div>
+<div class='item-banner-box'>
+<a href="/house-plans/styles/contemporary"><div class='banner-photo'>
+<img alt='Contemporary House Plans' class='img-responsive async-banner-img' data-src='https://assets.architecturaldesigns.com/plan_assets/358375805/thumb/623312DJ_Render001_1701884018.webp' src='https://www.architecturaldesigns.com/assets/image-placeholder-2080d58585f4049a64928937f9f3e0791f9e383071c10e71114db518b0ec3852.png'>
+</div>
+<div class='banner-title'>
+Contemporary
+</div>
+</a></div>
+<div class='item-banner-box'>
+<a href="/house-plans/styles/modern"><div class='banner-photo'>
+<img alt='Modern House Plans' class='img-responsive async-banner-img' data-src='https://assets.architecturaldesigns.com/plan_assets/357596714/thumb/72394DA_Render_1700056266.webp' src='https://www.architecturaldesigns.com/assets/image-placeholder-2080d58585f4049a64928937f9f3e0791f9e383071c10e71114db518b0ec3852.png'>
+</div>
+<div class='banner-title'>
+Modern
+</div>
+</a></div>
+<div class='item-banner-box'>
+<a href="/house-plans/styles/traditional"><div class='banner-photo'>
+<img alt='Traditional House Plans' class='img-responsive async-banner-img' data-src='https://assets.architecturaldesigns.com/plan_assets/362298327/thumb/52351WM_Render001_1712150740.webp' src='https://www.architecturaldesigns.com/assets/image-placeholder-2080d58585f4049a64928937f9f3e0791f9e383071c10e71114db518b0ec3852.png'>
+</div>
+<div class='banner-title'>
+Traditional
+</div>
+</a></div>
+</div>
+</div>
+<div class='row margin-top-10'>
+<div class='col-sm-12'>
+<a class="btn btn-primary" href="https://www.architecturaldesigns.com/house-plans/styles">View All Styles</a>
+</div>
+</div>
+</div>
+<div class='col-md-3 col-sm-6'>
+<div class='dynamic-collections'>
+<h3>Shop by Square Footage</h3>
+<ul>
+<li><a href="/house-plans/collections/house-plans-under-1000-sq-ft">1,000 And Under</a></li>
+<li><a href="/house-plans/collections/1001-to-1500-sq-ft-house-plans">1,001 - 1,500</a></li>
+<li><a href="/house-plans/collections/1501-to-2000-sq-ft-house-plans">1,501 - 2,000</a></li>
+<li><a href="/house-plans/collections/2001-to-2500-sq-ft-house-plans">2,001 - 2,500</a></li>
+<li><a href="/house-plans/collections/2501-to-3000-sq-ft-house-plans">2,501 - 3,000</a></li>
+<li><a href="/house-plans/collections/3001-to-3500-sq-ft-house-plans">3,001 - 3,500</a></li>
+<li><a href="/house-plans/collections/3501-to-4000-sq-ft-house-plans">3,501 - 4,000</a></li>
+<li><a href="/house-plans/collections/4001-to-5000-sq-ft-house-plans">4,001 - 5,000</a></li>
+<li><a href="/house-plans/collections/min-5001-sq-ft-house-plans">5,001 And Up</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='collections-menu-items megamenu-items'>
+<div class='row col-wrapper'>
+<div class='col-md-6 col-sm-6 border-r'>
+<h3>Top Collections</h3>
+<div class='row'>
+<div class='col-sm-6 col-xs-6'>
+<ul>
+<li><a href="/house-plans/collections/exclusive">Exclusive</a></li>
+<li><a href="/house-plans/collections/new">New</a></li>
+<li><a href="/house-plans/collections/client-photos">Client Photos</a></li>
+<li><a href="/house-plans/collections/interactive-tours">Interactive Tours</a></li>
+<li><a href="/house-plans/collections/house-plan-videos">House Plan Videos</a></li>
+<li><a href="/house-plans/collections/photo-gallery">Photo Gallery</a></li>
+<li><a href="/house-plans/collections/luxury">Luxury</a></li>
+<li><a href="/house-plans/collections/premium-collection">Premium Collection</a></li>
+<li><a href="/house-plans/collections/lake-house-plans">Lake House Plans</a></li>
+<li><a href="/house-plans/collections/adu">ADU</a></li>
+</ul>
+</div>
+<div class='col-sm-6 col-xs-6'>
+<ul>
+<li><a href="/house-plans/collections/multi-generational">Multi-Generational</a></li>
+<li><a href="/house-plans/collections/garage-apartments">Garage Apartments</a></li>
+<li><a href="/house-plans/collections/detached-garage-plans">Detached Garage Plans</a></li>
+<li><a href="/house-plans/collections/rv-garage-plans">RV Garage Plans</a></li>
+<li><a href="/house-plans/collections/garage-plans-with-workshop">Garage Plans with Workshop</a></li>
+<li><a href="/house-plans/collections/2-bedroom-house-plans">2 Bedroom House Plans</a></li>
+<li><a href="/house-plans/collections/3-bedroom-house-plans">3 Bedroom House Plans</a></li>
+<li><a href="/house-plans/collections/4-bedroom-house-plans">4 Bedroom House Plans</a></li>
+<li><a href="/house-plans/collections/5-bedroom-house-plans">5 Bedroom House Plans</a></li>
+<li><a href="/house-plans/collections/sports-court">Sports Court</a></li>
+</ul>
+</div>
+</div>
+<div class='row margin-top-10'>
+<div class='col-sm-12'>
+<a class="btn btn-primary" href="https://www.architecturaldesigns.com/house-plans/collections">View All Collections</a>
+</div>
+</div>
+</div>
+<div class='col-md-3 col-sm-6'>
+<div class='dynamic-collections'>
+<h3>Shop by Square Footage</h3>
+<ul class='dynamic-collections-ul'>
+<li><a href="/house-plans/collections/house-plans-under-1000-sq-ft">1,000 And Under</a></li>
+<li><a href="/house-plans/collections/1001-to-1500-sq-ft-house-plans">1,001 - 1,500</a></li>
+<li><a href="/house-plans/collections/1501-to-2000-sq-ft-house-plans">1,501 - 2,000</a></li>
+<li><a href="/house-plans/collections/2001-to-2500-sq-ft-house-plans">2,001 - 2,500</a></li>
+<li><a href="/house-plans/collections/2501-to-3000-sq-ft-house-plans">2,501 - 3,000</a></li>
+<li><a href="/house-plans/collections/3001-to-3500-sq-ft-house-plans">3,001 - 3,500</a></li>
+<li><a href="/house-plans/collections/3501-to-4000-sq-ft-house-plans">3,501 - 4,000</a></li>
+<li><a href="/house-plans/collections/4001-to-5000-sq-ft-house-plans">4,001 - 5,000</a></li>
+<li><a href="/house-plans/collections/min-5001-sq-ft-house-plans">5,001 And Up</a></li>
+</ul>
+<h3>Top Plans By State</h3>
+<ul class='dynamic-collections-ul'>
+<li><a href="/house-plans/states/georgia">Georgia</a></li>
+<li><a href="/house-plans/states/texas">Texas</a></li>
+<li><a href="/house-plans/states/tennessee">Tennessee</a></li>
+<li><a href="/house-plans/states/north-carolina">North Carolina</a></li>
+<li><a href="/house-plans/states/south-carolina">South Carolina</a></li>
+</ul>
+<div class='row margin-top-10'>
+<div class='col-sm-12'>
+<a class="btn btn-primary" href="https://www.architecturaldesigns.com/house-plans/by_states/us">View All States</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='garage-menu-items megamenu-items'>
+<div class='row col-wrapper'>
+<div class='col-md-5 col-sm-5'>
+<h3>Garage Plan Collections</h3>
+<ul class='grid'>
+<li><a href="/house-plans/collections/garage-apartments">Garage Apartments</a></li>
+<li><a href="/house-plans/collections/detached-garage-plans">Detached Garage Plans</a></li>
+<li><a href="/house-plans/collections/rv-garage-plans">RV Garage Plans</a></li>
+<li><a href="/house-plans/collections/garage-plans-with-workshop">Garage Plans with Workshop</a></li>
+<li><a href="/house-plans/collections/carports">Carports</a></li>
+<li><a href="/house-plans/collections/garage-plans-with-1-bedroom">Garage Plans with 1-Bedroom</a></li>
+<li><a href="/house-plans/collections/garage-plans-with-2-bedrooms">Garage Plans with 2-Bedrooms</a></li>
+<li><a href="/house-plans/collections/1-car-garage-plans">1-Car Garage Plans</a></li>
+<li><a href="/house-plans/collections/2-car-garage-plans">2-Car Garage Plans</a></li>
+<li><a href="/house-plans/collections/3-car-garage-plans">3-Car Garage Plans</a></li>
+<li><a href="/house-plans/collections/4-car-garage-plans">4-Car Garage Plans</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='home-flash'>
+</div>
+<div class='ai' id='header'>
+<div class='advertise-sale-panel'>
+<div class='panel-details'>
+</div>
+</div>
+<div class='header-top'>
+<div class='container'>
+<div class='row'>
+<div class='col-sm-12 clearfix'>
+<div class='navbar-header'>
+<button aria-controls='navbar' aria-expanded='false' class='navbar-toggle collapsed' data-target='#navbar' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</button>
+<a class='navbar-brand hide-print' data-turbolinks='false' href='https://www.architecturaldesigns.com/'>
+<img alt='Architectural Designs' class='img-responsive hidden-xs hidden-sm' src='https://www.architecturaldesigns.com/assets/logo-0baf58dffe24002fac28656c197c0a8e85c6725a2e01f4b4fae66e7a061726d8.png' title='Architectural Designs'>
+<img alt='Architectural Designs' class='img-responsive visible-xs visible-sm' src='https://www.architecturaldesigns.com/assets/logo-mobile-76164668e4d262ed64b0e2908afb24492028f981b73502f886afe69151406749.png' title='Architectural Designs'>
+</a>
+</div>
+<div class='nav-mobile hidden visible-xs hide-print'>
+<div class='search-wrapper'>
+<form class="form-inline" data-ai="true" data-voice="false" id="global_search_form_mobile" action="https://www.architecturaldesigns.com/house-plans/plan_number_search" accept-charset="UTF-8" method="get"><div class='search-addon-v2'>
+<div class='input-group'>
+<span class='ai-search-icon'>
+<svg fill='none' height='25' viewbox='0 0 24 25' width='24' xmlns='http://www.w3.org/2000/svg'>
+<path clip-rule='evenodd' d='M11 19.7294C6.58172 19.7294 3 16.1476 3 11.7294C3 7.31109 6.58172 3.72937 11 3.72937C15.4183 3.72937 19 7.31109 19 11.7294C19 13.5781 18.3729 15.2804 17.3198 16.6351L20.707 20.0223C21.0975 20.4129 21.0975 21.046 20.707 21.4366C20.3165 21.8271 19.6833 21.8271 19.2928 21.4366L15.9055 18.0493C14.5509 19.1023 12.8487 19.7294 11 19.7294ZM17 11.7294C17 15.0431 14.3137 17.7294 11 17.7294C7.68629 17.7294 5 15.0431 5 11.7294C5 8.41566 7.68629 5.72937 11 5.72937C14.3137 5.72937 17 8.41566 17 11.7294Z' fill-rule='evenodd' fill='#5A5D60'></path>
+</svg>
+</span>
+<span class='mic-container'>
+<span class='mic-indicator'></span>
+<span class='mic'>
+<svg fill='none' height='36' viewbox='0 0 36 36' width='36' xmlns='http://www.w3.org/2000/svg'>
+<g clip-path='url(#clip0_353_28091)'>
+<circle cx='18' cy='18' fill='#D8D8D8' id='Background' r='18'></circle>
+<g id='Mic'>
+<path d='M12.9 7.5C12.9 5.01472 14.9147 3 17.4 3C19.8853 3 21.9 5.01472 21.9 7.5V16.5C21.9 18.9853 19.8853 21 17.4 21C14.9147 21 12.9 18.9853 12.9 16.5V7.5Z' fill='#5A5D60'></path>
+<path clip-rule='evenodd' d='M9.89999 9C10.7284 9 11.4 9.67157 11.4 10.5V17.5385C11.4 20.8522 14.0863 23.5385 17.4 23.5385C20.7137 23.5385 23.4 20.8522 23.4 17.5385V10.5C23.4 9.67157 24.0716 9 24.9 9C25.7284 9 26.4 9.67157 26.4 10.5V17.5385C26.4 21.998 23.1566 25.6999 18.9 26.414V31.5C18.9 32.3284 18.2284 33 17.4 33C16.5716 33 15.9 32.3284 15.9 31.5V26.414C11.6434 25.6999 8.39999 21.998 8.39999 17.5385V10.5C8.39999 9.67157 9.07157 9 9.89999 9Z' fill-rule='evenodd' fill='#5A5D60'></path>
+</g>
+</g>
+<defs>
+<clippath id='clip0_353_28091'>
+<rect fill='white' height='36' width='36'></rect>
+</clippath>
+</defs>
+</svg>
+</span>
+</span>
+<input type="text" name="num" id="example_input_search" placeholder="Search" class="form-control dark-input-text exampleInputsearch" />
+<span aria-hidden='true' class='ai'>
+<img height="30" src="https://www.architecturaldesigns.com/assets/powered_by_ai-07d8f4af53e3649f23461c49f3e5807b12a411819d33eae748bb881666281cfe.png" />
+</span>
+</div>
+<button>
+Search
+</button>
+</div>
+</form></div>
+</div>
+<div class='navbar-collapse collapse' id='navbar'>
+<div class='close-menu-icon'>
+<a id="closeMenu" href="javascript:void(0);"><span class='close-menu'></span>
+</a></div>
+<div class='icon-wrapper'>
+<ul class='nav navbar-nav navbar-right hide-print'>
+<li class='hidden visible-xs page-links'>
+<label>&nbsp;</label>
+<div class='links'>
+<a href="https://www.architecturaldesigns.com/house-plans/collections/new?sort=newest">NEW</a>
+</div>
+<div class='links'>
+<a class="mob-collections-menu-link" href="javascript:void(0);">COLLECTIONS</a>
+</div>
+<div class='links'>
+<a href="https://www.architecturaldesigns.com/house-plans/collections/multi-family-home-plans">MULTI-FAMILY</a>
+</div>
+<div class='links'>
+<a class="mob-styles-menu-link" href="javascript:void(0);">STYLES</a>
+</div>
+<div class='links'>
+<a href="https://www.architecturaldesigns.com/services/cost_to_build">COST-TO-BUILD</a>
+</div>
+<div class='links'>
+<a class="mob-garage-menu-link" href="javascript:void(0);">GARAGE PLANS</a>
+</div>
+<div class='links top-space'>
+<a class="mob-services-menu-link" href="javascript:void(0);">SERVICES</a>
+</div>
+<div class='links'>
+<a class="mob-about-menu-link" href="javascript:void(0);">ABOUT</a>
+</div>
+</li>
+<li class='account-links hidden visible-xs'>
+<a class="account" href="https://www.architecturaldesigns.com/users/sign_up"><span class='ic-notification'></span>
+Account
+</a><a class="cart" data-turbolinks="false" href="https://www.architecturaldesigns.com/orders/cart"><span class='new-cart-icon'>
+<span class='cart-count'>0</span>
+</span>
+Cart
+</a><a class="favorites" href="https://www.architecturaldesigns.com/users/sign_up?rt=%2Fusers%2Ffavorites"><span></span>
+Favorites
+</a></li>
+<li class='need-help hidden visible-xs'>
+<span class='phone'></span>
+<span class='number'>800-854-7852</span>
+Need Help?
+</li>
+<li class='mob-inline no-mb-bd margin-top-0 margin-bottom-0 login hidden-xs hidden'>
+<a aria-label="Click for New User Registration or Login" href="https://www.architecturaldesigns.com/users/sign_up"><span>
+<img alt="New User Registration or Login" src="https://www.architecturaldesigns.com/assets/icon-key-23f23db306902194b5ad3819571266d5651a30bbf039285cedc8e7ddd0ecdbb3.svg" />
+</span>
+</a></li>
+<li class='mob-inline no-mb-bd margin-top-0 margin-bottom-0 my-cart hidden-xs hidden'>
+<a data-turbolinks='false' href='https://www.architecturaldesigns.com/orders/cart'>
+<span class='new-cart-icon'>
+<span class='cart-count'>0</span>
+</span>
+</a>
+</li>
+<li class='mob-inline no-mb-bd margin-top-0 my-plans hidden-xs hidden'>
+<a href="https://www.architecturaldesigns.com/users/sign_up?rt=%2Fusers%2Ffavorites"><span class='small-star'></span>
+</a></li>
+<li class='mob-inline no-mb-bd margin-top-0 margin-bottom-0 margin-right-0 hidden-xs'>
+<form class="form-inline" data-ai="true" data-voice="false" id="global_search_form" action="https://www.architecturaldesigns.com/house-plans/plan_number_search" accept-charset="UTF-8" method="get"><div class='search-addon-v2'>
+<div class='input-group'>
+<span class='ai-search-icon'>
+<svg fill='none' height='25' viewbox='0 0 24 25' width='24' xmlns='http://www.w3.org/2000/svg'>
+<path clip-rule='evenodd' d='M11 19.7294C6.58172 19.7294 3 16.1476 3 11.7294C3 7.31109 6.58172 3.72937 11 3.72937C15.4183 3.72937 19 7.31109 19 11.7294C19 13.5781 18.3729 15.2804 17.3198 16.6351L20.707 20.0223C21.0975 20.4129 21.0975 21.046 20.707 21.4366C20.3165 21.8271 19.6833 21.8271 19.2928 21.4366L15.9055 18.0493C14.5509 19.1023 12.8487 19.7294 11 19.7294ZM17 11.7294C17 15.0431 14.3137 17.7294 11 17.7294C7.68629 17.7294 5 15.0431 5 11.7294C5 8.41566 7.68629 5.72937 11 5.72937C14.3137 5.72937 17 8.41566 17 11.7294Z' fill-rule='evenodd' fill='#5A5D60'></path>
+</svg>
+</span>
+<span class='mic-container'>
+<span class='mic-indicator'></span>
+<span class='mic'>
+<svg fill='none' height='36' viewbox='0 0 36 36' width='36' xmlns='http://www.w3.org/2000/svg'>
+<g clip-path='url(#clip0_353_28091)'>
+<circle cx='18' cy='18' fill='#D8D8D8' id='Background' r='18'></circle>
+<g id='Mic'>
+<path d='M12.9 7.5C12.9 5.01472 14.9147 3 17.4 3C19.8853 3 21.9 5.01472 21.9 7.5V16.5C21.9 18.9853 19.8853 21 17.4 21C14.9147 21 12.9 18.9853 12.9 16.5V7.5Z' fill='#5A5D60'></path>
+<path clip-rule='evenodd' d='M9.89999 9C10.7284 9 11.4 9.67157 11.4 10.5V17.5385C11.4 20.8522 14.0863 23.5385 17.4 23.5385C20.7137 23.5385 23.4 20.8522 23.4 17.5385V10.5C23.4 9.67157 24.0716 9 24.9 9C25.7284 9 26.4 9.67157 26.4 10.5V17.5385C26.4 21.998 23.1566 25.6999 18.9 26.414V31.5C18.9 32.3284 18.2284 33 17.4 33C16.5716 33 15.9 32.3284 15.9 31.5V26.414C11.6434 25.6999 8.39999 21.998 8.39999 17.5385V10.5C8.39999 9.67157 9.07157 9 9.89999 9Z' fill-rule='evenodd' fill='#5A5D60'></path>
+</g>
+</g>
+<defs>
+<clippath id='clip0_353_28091'>
+<rect fill='white' height='36' width='36'></rect>
+</clippath>
+</defs>
+</svg>
+</span>
+</span>
+<input type="text" name="num" id="example_input_search" placeholder="Search for anything" class="form-control dark-input-text exampleInputsearch" />
+<span aria-hidden='true' class='ai'>
+<img height="30" src="https://www.architecturaldesigns.com/assets/powered_by_ai-07d8f4af53e3649f23461c49f3e5807b12a411819d33eae748bb881666281cfe.png" />
+</span>
+</div>
+<button>
+Search
+</button>
+</div>
+</form></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='header-filter hidden-xs'>
+<div class='container'>
+<div class='row slim-head'>
+<div class='col-lg-12 col-md-12'>
+<ul class='combined-menu'>
+<ul class='slim-menu'>
+<li>
+<a class="all-plans-link" href="https://www.architecturaldesigns.com/house-plans/search">All Plans</a>
+</li>
+</ul>
+<ul class='nav navbar-nav navbar-right hide-print'>
+<li class='mob-inline no-mb-bd margin-top-0 margin-bottom-0 login hidden-xs'>
+<a aria-label="Click for New User Registration or Login" href="https://www.architecturaldesigns.com/users/sign_up"><span>
+<img alt="New User Registration or Login" src="https://www.architecturaldesigns.com/assets/icon-key-23f23db306902194b5ad3819571266d5651a30bbf039285cedc8e7ddd0ecdbb3.svg" />
+</span>
+</a></li>
+<li class='mob-inline no-mb-bd margin-top-0 my-plans hidden-xs'>
+<a aria-label="Login to check your favorite plans" href="https://www.architecturaldesigns.com/users/sign_up?rt=%2Fusers%2Ffavorites"><span class='small-star'></span>
+</a></li>
+<li class='mob-inline no-mb-bd margin-top-0 margin-bottom-0 my-cart hidden-xs'>
+<a data-turbolinks='false' href='https://www.architecturaldesigns.com/orders/cart'>
+<span class='new-cart-icon'>
+<span class='cart-count'>0</span>
+</span>
+</a>
+</li>
+</ul>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='header-filter stick-it'>
+<div class='container'>
+<div class='row slim-head'>
+<div class='col-lg-12 col-md-12 menu-line'>
+<ul class='slim-menu'>
+<li class='visible-xs'>
+<a class="btn btn-search" href="https://www.architecturaldesigns.com/house-plans/search"><span class='search-icon icon-inline-align'></span>
+Search
+</a></li>
+<li class='hidden-xs'>
+<a class="all-plans-link" href="https://www.architecturaldesigns.com/house-plans/search">All Plans</a>
+</li>
+<li class='hidden-xs'>
+<a class="collections-new" href="https://www.architecturaldesigns.com/house-plans/collections/new?sort=newest">New</a>
+</li>
+<li class='hidden-xs'>
+<a class="styles-menu-link" href="javascript:void(0);">Styles</a>
+</li>
+<li class='hidden-xs'>
+<a class="collections-menu-link" href="javascript:void(0);">Collections</a>
+</li>
+<li class='hidden-xs'>
+<a href="https://www.architecturaldesigns.com/services/cost_to_build">Cost-To-Build</a>
+</li>
+<li class='hidden-xs'>
+<a href="https://www.architecturaldesigns.com/house-plans/collections/multi-family-home-plans">Multi-Family</a>
+</li>
+<li class='hidden-xs'>
+<a class="garage-menu-link" href="javascript:void(0);">Garages</a>
+</li>
+</ul>
+<div class='contact-hamburger'>
+<div class='contact-number'>
+Need Help?
+<br>
+<strong>800-854-7852</strong>
+</div>
+<button aria-controls='navbar' aria-expanded='false' class='navbar-toggle collapsed' data-target='#navbar' data-toggle='collapse' type='button'>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id='show_sticky_header'></div>
+<script>
+  $(function () {
+    var controller_mobile = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({
+      triggerElement: "#show_sticky_header",
+      duration: 0,
+      triggerHook: 0,
+      reverse: true
+    })
+    .setClassToggle("#header", "show-stick-header")
+    .addTo(controller_mobile);
+  });
+</script>
+
+</div>
+<div class='overlay-div'>
+<img height='100' src='https://www.architecturaldesigns.com/assets/pageloader-a50875a3bc56c69d061d66f82b7a5f4f6d48a7ea72214d545d7eec245dcc1b70.svg' width='100'>
+</div>
+<div class='mob-megamenu hidden-md hidden-lg' style='display: none;'>
+<div class='menu-container'>
+<div class='width-100p clearfix'>
+<div class='action-items'>
+<a id="backBtn" href="javascript:void(0);"><span class='back-btn'>Back</span>
+</a><a id="cancelBtn" href="javascript:void(0);"><span class='cancel-btn'></span>
+</a></div>
+<div class='container'>
+<div class='row'>
+<div class='styles-menu-items megamenu-items'>
+<div class='col-xs-12'>
+<h3>Top Styles</h3>
+<div class='row'>
+<div class='col-xs-12'>
+<p><a href="/house-plans/styles/barndominium">Barndominium</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/styles/modern-farmhouse">Modern Farmhouse</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/styles/craftsman">Craftsman</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/styles/country">Country</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/styles/new-american">New American</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/styles/scandinavian">Scandinavian</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/styles/mid-century-modern">Mid Century Modern</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/styles/cottage">Cottage</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/styles/transitional">Transitional</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/styles/contemporary">Contemporary</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/styles/modern">Modern</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/styles/traditional">Traditional</a></p>
+</div>
+</div>
+<div class='row margin-top-10 margin-bottom-10'>
+<div class='col-sm-12'>
+<a class="view-all" href="https://www.architecturaldesigns.com/house-plans/styles"><h4>View All Styles</h4>
+<span></span>
+</a></div>
+</div>
+</div>
+<hr class='sep'>
+<div class='col-xs-12'>
+<div class='dynamic-collections'>
+<h3>Shop by Square Footage</h3>
+<ul>
+<li><a href="/house-plans/collections/house-plans-under-1000-sq-ft">1,000 And Under</a></li>
+<li><a href="/house-plans/collections/1001-to-1500-sq-ft-house-plans">1,001 - 1,500</a></li>
+<li><a href="/house-plans/collections/1501-to-2000-sq-ft-house-plans">1,501 - 2,000</a></li>
+<li><a href="/house-plans/collections/2001-to-2500-sq-ft-house-plans">2,001 - 2,500</a></li>
+<li><a href="/house-plans/collections/2501-to-3000-sq-ft-house-plans">2,501 - 3,000</a></li>
+<li><a href="/house-plans/collections/3001-to-3500-sq-ft-house-plans">3,001 - 3,500</a></li>
+<li><a href="/house-plans/collections/3501-to-4000-sq-ft-house-plans">3,501 - 4,000</a></li>
+<li><a href="/house-plans/collections/4001-to-5000-sq-ft-house-plans">4,001 - 5,000</a></li>
+<li><a href="/house-plans/collections/min-5001-sq-ft-house-plans">5,001 And Up</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class='collections-menu-items megamenu-items'>
+<div class='col-xs-12'>
+<h3>Top Collections</h3>
+<div class='row'>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/exclusive">Exclusive</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/new">New</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/client-photos">Client Photos</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/interactive-tours">Interactive Tours</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/house-plan-videos">House Plan Videos</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/photo-gallery">Photo Gallery</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/luxury">Luxury</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/premium-collection">Premium Collection</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/lake-house-plans">Lake House Plans</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/adu">ADU</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/multi-generational">Multi-Generational</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/garage-apartments">Garage Apartments</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/detached-garage-plans">Detached Garage Plans</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/rv-garage-plans">RV Garage Plans</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/garage-plans-with-workshop">Garage Plans with Workshop</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/2-bedroom-house-plans">2 Bedroom House Plans</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/3-bedroom-house-plans">3 Bedroom House Plans</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/4-bedroom-house-plans">4 Bedroom House Plans</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/5-bedroom-house-plans">5 Bedroom House Plans</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/sports-court">Sports Court</a></p>
+</div>
+</div>
+<div class='row margin-top-10 margin-bottom-10'>
+<div class='col-sm-12'>
+<a class="view-all" href="https://www.architecturaldesigns.com/house-plans/collections"><h4>View All Collections</h4>
+<span></span>
+</a></div>
+</div>
+</div>
+<hr class='sep'>
+<div class='col-xs-12'>
+<div class='dynamic-collections'>
+<h3>Shop by Square Footage</h3>
+<ul class='dynamic-collections-ul'>
+<li><a href="/house-plans/collections/house-plans-under-1000-sq-ft">1,000 And Under</a></li>
+<li><a href="/house-plans/collections/1001-to-1500-sq-ft-house-plans">1,001 - 1,500</a></li>
+<li><a href="/house-plans/collections/1501-to-2000-sq-ft-house-plans">1,501 - 2,000</a></li>
+<li><a href="/house-plans/collections/2001-to-2500-sq-ft-house-plans">2,001 - 2,500</a></li>
+<li><a href="/house-plans/collections/2501-to-3000-sq-ft-house-plans">2,501 - 3,000</a></li>
+<li><a href="/house-plans/collections/3001-to-3500-sq-ft-house-plans">3,001 - 3,500</a></li>
+<li><a href="/house-plans/collections/3501-to-4000-sq-ft-house-plans">3,501 - 4,000</a></li>
+<li><a href="/house-plans/collections/4001-to-5000-sq-ft-house-plans">4,001 - 5,000</a></li>
+<li><a href="/house-plans/collections/min-5001-sq-ft-house-plans">5,001 And Up</a></li>
+</ul>
+<h3>Top Plans By State</h3>
+<ul class='dynamic-collections-ul'>
+<li><a href="/house-plans/states/georgia">Georgia</a></li>
+<li><a href="/house-plans/states/texas">Texas</a></li>
+<li><a href="/house-plans/states/tennessee">Tennessee</a></li>
+<li><a href="/house-plans/states/north-carolina">North Carolina</a></li>
+<li><a href="/house-plans/states/south-carolina">South Carolina</a></li>
+</ul>
+<div class='row margin-top-10'>
+<div class='col-sm-12'>
+<a class="btn btn-primary" href="https://www.architecturaldesigns.com/house-plans/by_states/us">View All States</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='garage-menu-items megamenu-items'>
+<div class='col-xs-12'>
+<h3>Garage Plan Collections</h3>
+<div class='row'>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/garage-apartments">Garage Apartments</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/detached-garage-plans">Detached Garage Plans</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/rv-garage-plans">RV Garage Plans</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/garage-plans-with-workshop">Garage Plans with Workshop</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/carports">Carports</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/garage-plans-with-1-bedroom">Garage Plans with 1-Bedroom</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/garage-plans-with-2-bedrooms">Garage Plans with 2-Bedrooms</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/1-car-garage-plans">1-Car Garage Plans</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/2-car-garage-plans">2-Car Garage Plans</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/3-car-garage-plans">3-Car Garage Plans</a></p>
+</div>
+<div class='col-xs-12'>
+<p><a href="/house-plans/collections/4-car-garage-plans">4-Car Garage Plans</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class='services-menu-items megamenu-items'>
+<div class='col-xs-12'>
+<h3>Services</h3>
+<div class='row'>
+<div class='col-xs-12'>
+<p>
+<a href="https://www.architecturaldesigns.com/services/whats-included">What&#39;s Included</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/services/cost_to_build">Cost-to-build</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/services/modifications">Modifications</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/services/builder_membership">Builder Membership</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/designers/new">Designers</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/services/become-an-affiliate">Become an Affiliate</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/services/photo-removal-request">Photo Removal Request</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/services/changes-to-existing-orders">Changes to Existing Orders</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/services/home-products-and-services">Home Products &amp; Services</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class='about-menu-items megamenu-items'>
+<div class='col-xs-12'>
+<h3>About</h3>
+<div class='row'>
+<div class='col-xs-12'>
+<p>
+<a href="https://www.architecturaldesigns.com/about-us">Our Story</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/pricing">Pricing</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/reviews">Reviews</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/testimonials">Testimonials</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/return-policy">Return Policy</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/copyright">Copyright</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/frequently-asked-questions">FAQ</a>
+</p>
+<p>
+<a href="https://www.architecturaldesigns.com/contact-us">Contact</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</header>
+
+<div class='plans_home'>
+<!-- / welcome messgae -->
+<div class='welcome-alert-box'>
+</div>
+<div id='home_grid_slider'>
+<div class='container'>
+<div class='row'>
+<!   <div class='col-md-12 text-center'> --->
+<div class='slider-grid has_ad_sale'>
+<div class='item' id='grid_item_1'></div>
+<div class='item' id='grid_item_2'></div>
+<div class='item' id='grid_item_3'></div>
+<div class='item' id='grid_item_4'></div>
+<div class='item' id='grid_item_5'></div>
+<div class='item' id='grid_item_6'></div>
+<div class='item' id='grid_item_7'></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  window.home_grid_data = {"1":{"data":{"images":[{"image_url":"https://assets.architecturaldesigns.com/plan_assets/62610/large/62610DJ_Render01_1707315632.webp","link":"/house-plans/modest-ranch-duplex-house-plan-62610dj"},{"image_url":"https://assets.architecturaldesigns.com/plan_assets/367226794/large/420183WNT_render001_1725995291.webp","link":"/house-plans/2-bed-contemporary-adu-house-plan-with-open-concept-living-space-924-sq-ft-420183wnt"},{"image_url":"https://assets.architecturaldesigns.com/plan_assets/353230893/large/42443DB_Render-01_1689625665.webp","link":"/house-plans/two-story-new-american-contemporary-farmhouse-under-2200-square-feet-42443db"},{"image_url":"https://assets.architecturaldesigns.com/plan_assets/367252172/large/24132BG_Render_001_1726078295.webp","link":"/house-plans/4-bed-contemporary-northwest-house-plan-with-roof-top-deck-and-indoor-pool-2750-sq-ft-24132bg"}],"text":[{"card_value":"3,000","card_include_plus":true,"card_label":"Exclusive House Plans","link":"https://www.architecturaldesigns.com/house-plans/collections/exclusive"},{"card_value":"25,000","card_include_plus":true,"card_label":"Curated Plans","link":"https://www.architecturaldesigns.com/house-plans/search"},{"card_value":"675","card_include_plus":true,"card_label":"Multi-Family Plans","link":"https://www.architecturaldesigns.com/house-plans/collections/multi-family-home-plans"}]}},"2":{"data":{"images":[{"image_url":"https://assets.architecturaldesigns.com/plan_assets/324999691/large/33219ZR_Render01_1726164642.webp","link":"/house-plans/coastal-contemporary-house-plan-with-cantilevered-balconies-and-guest-house-4133-sq-ft-33219zr"},{"image_url":"https://assets.architecturaldesigns.com/plan_assets/367302947/large/135304GRA_Render_01_1726253754.webp","link":"/house-plans/2-or-3-bedroom-modern-mountain-house-plan-under-1200-sq-ft-with-lower-level-expansion-135304gra"},{"image_url":"https://assets.architecturaldesigns.com/plan_assets/367090872/large/818134JSS_Render_003_1725647423.webp","link":"/house-plans/4-bed-modern-farmhouse-plan-with-outdoor-kitchen-3131-sq-ft-818134jss"},{"image_url":"https://assets.architecturaldesigns.com/plan_assets/367277566/large/421566CHD_Render_001_1726168868.webp","link":"/house-plans/3-bed-european-cottage-with-pocket-office-or-study-2297-sq-ft-421566chd"}],"text":[{"card_value":"675","card_include_plus":true,"card_label":"Multi-Family Plans","link":"https://www.architecturaldesigns.com/house-plans/collections/multi-family-home-plans"},{"card_value":"25,000","card_include_plus":true,"card_label":"Curated Plans","link":"https://www.architecturaldesigns.com/house-plans/search"},{"card_value":"3,000","card_include_plus":true,"card_label":"Exclusive House Plans","link":"https://www.architecturaldesigns.com/house-plans/collections/exclusive"}]}},"3":{"data":{"images":[{"image_url":"https://assets.architecturaldesigns.com/plan_assets/367302943/large/623440DJ_Render01_1726233630.webp","link":"/house-plans/6-bed-barndominium-house-plan-with-two-story-great-room-3991-sq-ft-623440dj"},{"image_url":"https://assets.architecturaldesigns.com/plan_assets/62610/large/62610DJ_Render01_1707315632.webp","link":"/house-plans/modest-ranch-duplex-house-plan-62610dj"},{"image_url":"https://assets.architecturaldesigns.com/plan_assets/367226794/large/420183WNT_render001_1725995291.webp","link":"/house-plans/2-bed-contemporary-adu-house-plan-with-open-concept-living-space-924-sq-ft-420183wnt"},{"image_url":"https://assets.architecturaldesigns.com/plan_assets/353230893/large/42443DB_Render-01_1689625665.webp","link":"/house-plans/two-story-new-american-contemporary-farmhouse-under-2200-square-feet-42443db"}],"text":[{"card_value":"3,000","card_include_plus":true,"card_label":"Exclusive House Plans","link":"https://www.architecturaldesigns.com/house-plans/collections/exclusive"},{"card_value":"25,000","card_include_plus":true,"card_label":"Curated Plans","link":"https://www.architecturaldesigns.com/house-plans/search"},{"card_value":"675","card_include_plus":true,"card_label":"Multi-Family Plans","link":"https://www.architecturaldesigns.com/house-plans/collections/multi-family-home-plans"}]}},"4":{"data":{"images":[{"image_url":"https://assets.architecturaldesigns.com/plan_assets/367252172/large/24132BG_Render_001_1726078295.webp","link":"/house-plans/4-bed-contemporary-northwest-house-plan-with-roof-top-deck-and-indoor-pool-2750-sq-ft-24132bg"},{"image_url":"https://assets.architecturaldesigns.com/plan_assets/324999691/large/33219ZR_Render01_1726164642.webp","link":"/house-plans/coastal-contemporary-house-plan-with-cantilevered-balconies-and-guest-house-4133-sq-ft-33219zr"},{"image_url":"https://assets.architecturaldesigns.com/plan_assets/367302947/large/135304GRA_Render_01_1726253754.webp","link":"/house-plans/2-or-3-bedroom-modern-mountain-house-plan-under-1200-sq-ft-with-lower-level-expansion-135304gra"},{"image_url":"https://assets.architecturaldesigns.com/plan_assets/367090872/large/818134JSS_Render_003_1725647423.webp","link":"/house-plans/4-bed-modern-farmhouse-plan-with-outdoor-kitchen-3131-sq-ft-818134jss"}],"text":[{"card_value":"3,000","card_include_plus":true,"card_label":"Exclusive House Plans","link":"https://www.architecturaldesigns.com/house-plans/collections/exclusive"},{"card_value":"25,000","card_include_plus":true,"card_label":"Curated Plans","link":"https://www.architecturaldesigns.com/house-plans/search"},{"card_value":"675","card_include_plus":true,"card_label":"Multi-Family Plans","link":"https://www.architecturaldesigns.com/house-plans/collections/multi-family-home-plans"}]}}}
+</script>
+
+<!-- / search bar -->
+<div id='homeSearchBar'>
+<div class='container'>
+<div class='title'>
+<div class='heading'>Your Dream Home Awaits</div>
+</div>
+<div class='types'>
+<div class='type' data-plantype='single family home' id='single_family_home_house_plans'>
+<span class='plan-type-icon single_family_home'></span>
+<span class='text'>Single Family</span>
+</div>
+<div class='type' data-plantype='multiple family home' id='multiple_family_home_house_plans'>
+<span class='plan-type-icon multiple_family_home'></span>
+<span class='text'>Multi-Family</span>
+</div>
+<div class='type' data-plantype='garage' id='garage_house_plans'>
+<span class='plan-type-icon garage'></span>
+<span class='text'>Garages</span>
+</div>
+<div class='type' data-plantype='other' id='other_house_plans'>
+<span class='plan-type-icon other'></span>
+<span class='text'>Other Plans</span>
+</div>
+</div>
+<form id="homeSearch" action="/house-plans/search" accept-charset="UTF-8" method="get"><input type="hidden" name="page" id="page" value="1" autocomplete="off" />
+<input type="hidden" name="sort" id="sort" value="trending" autocomplete="off" />
+<div id='plan-type' style='display:none;'></div>
+<div class='home-basic-search home-new' id='plan_home_search_filter'>
+<div class='filters'>
+<div class='search-options checkeds bed'>
+<div class='fields'>
+<input type="hidden" name="be_min" id="be_min" autocomplete="off" />
+<input type="hidden" name="be_max" id="be_max" autocomplete="off" />
+<a class="bed-field range-field" id="rangeField_bed_1" data-ele="1" data-type="bed" href="javascript:void(0);">1</a>
+<a class="bed-field range-field" id="rangeField_bed_2" data-ele="2" data-type="bed" href="javascript:void(0);">2</a>
+<a class="bed-field range-field" id="rangeField_bed_3" data-ele="3" data-type="bed" href="javascript:void(0);">3</a>
+<a class="bed-field range-field" id="rangeField_bed_4" data-ele="4" data-type="bed" href="javascript:void(0);">4</a>
+<a class="bed-field range-field" id="rangeField_bed_5" data-ele="5" data-type="bed" href="javascript:void(0);">5+</a>
+</div>
+<div class='icon_label'>
+<div class='ui-icon'>
+<div class='bed'></div>
+</div>
+<div class='ui-label'>Bedrooms</div>
+</div>
+</div>
+<div class='search-options checkeds bath'>
+<div class='fields'>
+<input type="hidden" name="ba_min" id="ba_min" autocomplete="off" />
+<input type="hidden" name="ba_max" id="ba_max" autocomplete="off" />
+<a class="bath-field range-field" id="rangeField_bath_1" data-ele="1" data-type="bath" href="javascript:void(0);">1</a>
+<a class="bath-field range-field" id="rangeField_bath_2" data-ele="2" data-type="bath" href="javascript:void(0);">2</a>
+<a class="bath-field range-field" id="rangeField_bath_3" data-ele="3" data-type="bath" href="javascript:void(0);">3</a>
+<a class="bath-field range-field" id="rangeField_bath_4" data-ele="4" data-type="bath" href="javascript:void(0);">4</a>
+<a class="bath-field range-field" id="rangeField_bath_5" data-ele="5" data-type="bath" href="javascript:void(0);">5+</a>
+</div>
+<div class='icon_label'>
+<div class='ui-icon'>
+<div class='bath'></div>
+</div>
+<div class='ui-label'>Bathrooms</div>
+</div>
+</div>
+<div class='frame'>
+<div class='search-options heated'>
+<div class='fields number-field-text-look'>
+<input type="number" name="tla_min" id="tla_min" placeholder="Min Sq. Ft." min="0" max="2147483647" class="heated-field" data-placeholder="Min Sq. Ft." data-placeholder-mobile="Min" />
+<div class='separator'>-</div>
+<input type="number" name="tla_max" id="tla_max" placeholder="Max Sq Ft." min="0" max="2147483647" class="heated-field" data-placeholder="Max Sq. Ft." data-placeholder-mobile="Max" />
+</div>
+<div class='icon_label'>
+<div class='ui-icon'>
+<div class='heated'></div>
+</div>
+<div class='ui-label'>Heated Sq. Ft.</div>
+</div>
+</div>
+<div class='search-options checkeds floors'>
+<div class='fields'>
+<a class="floor-field range-field" id="rangeField_floor_1" data-ele="1" data-type="floor" href="javascript:void(0);">1</a>
+<span class='chk'>
+<input type="checkbox" name="fl[]" id="floor_1" value="1" />
+<label for="floor_1">1</label>
+</span>
+<a class="floor-field range-field" id="rangeField_floor_2" data-ele="2" data-type="floor" href="javascript:void(0);">2</a>
+<span class='chk'>
+<input type="checkbox" name="fl[]" id="floor_2" value="2" />
+<label for="floor_2">2</label>
+</span>
+<a class="floor-field range-field" id="rangeField_floor_3" data-ele="3" data-type="floor" href="javascript:void(0);">3+</a>
+<span class='chk'>
+<input type="checkbox" name="fl[]" id="floor_3" value="3" />
+<label for="floor_3">3</label>
+</span>
+</div>
+<div class='icon_label'>
+<div class='ui-icon'>
+<div class='floor'></div>
+</div>
+<div class='ui-label'>Floors</div>
+</div>
+</div>
+</div>
+</div>
+<div class='go-btn'>
+<button class='btn btn-search' type='submit'>
+Go
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!-- / features -->
+<div id='features'>
+<div class='visible-xs'>
+<!-- GAM 71161633/ARCHITECTURALDESIGNS_architecturaldesigns/home_hrec_1 -->
+<div data-fuse='22912447137' style='max-height: 100px;'></div>
+</div>
+<div class='container'>
+<div class='feature-col first-col'>
+<h2>Diverse & Inspired Designs</h2>
+<p>Our curated portfolio features every style and type of plan design from a diverse group of talented designers and architects. New designs added daily.</p>
+</div>
+<div class='feature-col second-col'>
+<h2>Exceptional Customer Service</h2>
+<p>Seasoned customer service staff with years of combined experience to help you find your dream home plan.</p>
+</div>
+<div class='feature-col third-col'>
+<h2>Modifications & Cost to Build</h2>
+<p>Make changes to a house plan at an affordable price. Buy a report to find out the cost to build in your area.</p>
+</div>
+</div>
+</div>
+<div class='bg-white'>
+<div class='container card-sliders'>
+<div id='recently_viewed_plans'></div>
+</div>
+  <div class="container featured-module">
+    <div class="featured-post">
+        <div class="featured-asset" style="background-image: url('https://assets.architecturaldesigns.com/image_assets/1/webp/911006JVD_Renders_New_001_1726580869.webp')"></div>
+        <div class="featured-content">
+          <div class="content">
+            <div class="content-heading">
+              House Plan Refresh: 5 Plans with New Renderings
+            </div>
+            <div class="content-description">
+              Some of our house plans have become client favorites, and for good reason! These classic designs have stood the test of time, offering functionality and versatility that just works. But even classics can get a refresh. Our talented designers and architects have been hard at work updating the exteriors with stunning new 3D renderings. These enhancements bring a fresh, modern touch to designs you already know and love, keeping them both timeless and current.
+            </div>
+              <div class="content-action">
+                <a class="content-button" href="https://blog.architecturaldesigns.com/house-plan-refresh-5-updated-plans-with-new-renderings/">
+                  <span class="button-text">Read More</span>
+</a>              </div>
+          </div>
+            <div class="attribution">
+              <div class="created-by">Ana Coddington</div>
+              <div class="from-text">Blog Post</div>
+              <div class="display_date">Sep 17, 2024</div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<div class='container card-sliders'>
+<div class='plan-carousal-wrapper' id='trending_plans_section'>
+<div class='title-view-more'>
+<div class='title'>Trending Plans</div>
+<a data-turbolinks="false" class="view-more" href="/house-plans/trending"><div class='view-more-text'>View More</div>
+</a></div>
+<div class='plans-block'>
+<div class='u-spacing-y-loosest'></div>
+<div class='plan-card col-xs-12 col-sm-4 col-md-3 col-lg-3'>
+<div class='plan-box main-plan-367328324'>
+<div class='plan-badges'>
+<a class="plan-tour-icon" title="360&deg; Tour of 330025WLE" data-turbolinks="false" href="/house-plans/2-bed-shingle-cottage-with-front-load-garage-998-sq-ft-330025wle/virtual_tour"><span class='tour-icon' title='360&amp;deg; Tour'></span>
+<span class='media-txt'>Tour</span>
+</a></div>
+<div class='plan-favorite'>
+<button aria-label='favorite 2-Bed Shingle Cottage with Front Load Garage - 998 Sq Ft' class='plan-box-favorite favorite-btn large-gray-star fav-367328324 is_not_favorite' data-plan-id='367328324' data-plan-number='330025WLE' data-plan-slug='2-bed-shingle-cottage-with-front-load-garage-998-sq-ft-330025wle' data-plan-thumb-url='https://assets.architecturaldesigns.com/plan_assets/367328324/thumb/330025WLE_Interior_001_1726493019.webp' data-plan-user-comment='' id='fav-367328324' type='button'></button>
+</div>
+<div class='plan-sub-header'>
+<div class='plan-caption'>
+<a href="/house-plans/2-bed-shingle-cottage-with-front-load-garage-998-sq-ft-330025wle"><div class='plan-number'>330025WLE</div>
+<div class='text'>Plan Number</div>
+</a></div>
+<div class='plan-pricing'>
+<div>
+<label>starting at</label>
+<span class='orig-prc orig-disc-prc'>$1,095</span>
+</div>
+<span class='disc-prc'>$930.75</span>
+</div>
+</div>
+<a aria-label='330025WLE: 2-Bed Shingle Cottage with Front Load Garage - 998 Sq Ft' data-turbolinks='false' href='/house-plans/2-bed-shingle-cottage-with-front-load-garage-998-sq-ft-330025wle'>
+<ul class='info'>
+<li>
+<span class='h3 ft-supm-bg'>998</span>
+<p class='ft-sml-bg'>Sq. Ft.</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>2</span>
+<p class='ft-sml-bg'>Bed</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>2</span>
+<p class='ft-sml-bg'>Bath</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>1</span>
+<p class='ft-sml-bg'>Story</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>
+2
+</span>
+<p class='ft-sml-bg'>Cars</p>
+</li>
+</ul>
+</a>
+</div>
+</div>
+<div class='plan-card col-xs-12 col-sm-4 col-md-3 col-lg-3'>
+<div class='plan-box main-plan-367328326'>
+<div class='plan-badges'>
+</div>
+<div class='plan-favorite'>
+<button aria-label='favorite 3-Bed Modern Farmhouse Plan with Two Master Suites - 3406 Sq Ft' class='plan-box-favorite favorite-btn large-gray-star fav-367328326 is_not_favorite' data-plan-id='367328326' data-plan-number='520019RKY' data-plan-slug='3-bed-modern-farmhouse-plan-with-two-master-suites-3406-sq-ft-520019rky' data-plan-thumb-url='https://assets.architecturaldesigns.com/plan_assets/367328326/thumb/520019RKY_Render001_1726501688.webp' data-plan-user-comment='' id='fav-367328326' type='button'></button>
+</div>
+<div class='plan-sub-header'>
+<div class='plan-caption'>
+<a href="/house-plans/3-bed-modern-farmhouse-plan-with-two-master-suites-3406-sq-ft-520019rky"><div class='plan-number'>520019RKY</div>
+<div class='text'>Plan Number</div>
+</a></div>
+<div class='plan-pricing'>
+<div>
+<label>starting at</label>
+<span class='orig-prc orig-disc-prc'>$1,700</span>
+</div>
+<span class='disc-prc'>$1,445</span>
+</div>
+</div>
+<a aria-label='520019RKY: 3-Bed Modern Farmhouse Plan with Two Master Suites - 3406 Sq Ft' data-turbolinks='false' href='/house-plans/3-bed-modern-farmhouse-plan-with-two-master-suites-3406-sq-ft-520019rky'>
+<ul class='info'>
+<li>
+<span class='h3 ft-supm-bg'>3,406</span>
+<p class='ft-sml-bg'>Sq. Ft.</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>3</span>
+<p class='ft-sml-bg'>Bed</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>3</span>
+<p class='ft-sml-bg'>Bath</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>2</span>
+<p class='ft-sml-bg'>Story</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>
+2
+</span>
+<p class='ft-sml-bg'>Cars</p>
+</li>
+</ul>
+</a>
+</div>
+</div>
+<div class='plan-card col-xs-12 col-sm-4 col-md-3 col-lg-3'>
+<div class='plan-box main-plan-367413478'>
+<div class='plan-badges'>
+</div>
+<div class='plan-favorite'>
+<button aria-label='favorite 3-Bed Modern Farmhouse Plan with Vaulted Family Room - 2139 Sq Ft' class='plan-box-favorite favorite-btn large-gray-star fav-367413478 is_not_favorite' data-plan-id='367413478' data-plan-number='680446VR' data-plan-slug='3-bed-modern-farmhouse-plan-with-vaulted-family-room-2139-sq-ft-680446vr' data-plan-thumb-url='https://assets.architecturaldesigns.com/plan_assets/367413478/thumb/680446VR_Render_1726501720.webp' data-plan-user-comment='' id='fav-367413478' type='button'></button>
+</div>
+<a aria-label='680446VR: 3-Bed Modern Farmhouse Plan with Vaulted Family Room - 2139 Sq Ft' data-turbolinks='false' href='/house-plans/3-bed-modern-farmhouse-plan-with-vaulted-family-room-2139-sq-ft-680446vr'>
+</a>
+<div class='plan-sub-header'>
+<div class='plan-pricing'>
+<div>
+<label>starting at</label>
+<span class='orig-prc orig-disc-prc'>$1,325</span>
+</div>
+<span class='disc-prc'>$1,126.25</span>
+</div>
+</div>
+<a aria-label='680446VR: 3-Bed Modern Farmhouse Plan with Vaulted Family Room - 2139 Sq Ft' data-turbolinks='false' href='/house-plans/3-bed-modern-farmhouse-plan-with-vaulted-family-room-2139-sq-ft-680446vr'>
+<ul class='info'>
+<li>
+<span class='h3 ft-supm-bg'>2,139</span>
+<p class='ft-sml-bg'>Sq. Ft.</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>3</span>
+<p class='ft-sml-bg'>Bed</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>3</span>
+<p class='ft-sml-bg'>Bath</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>1</span>
+<p class='ft-sml-bg'>Story</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>
+2-3
+</span>
+<p class='ft-sml-bg'>Cars</p>
+</li>
+</ul>
+</a>
+</div>
+</div>
+<div class='plan-card col-xs-12 col-sm-4 col-md-3 col-lg-3'>
+<div class='plan-box main-plan-366377745'>
+<div class='plan-badges'>
+</div>
+<div class='plan-favorite'>
+<button aria-label='favorite 3-Bed Mountain A-Frame House Plan with Two Story Great Room - 2321 Sq Ft' class='plan-box-favorite favorite-btn large-gray-star fav-366377745 is_not_favorite' data-plan-id='366377745' data-plan-number='70894MK' data-plan-slug='3-bed-mountain-a-frame-house-plan-with-two-story-great-room-2321-sq-ft-70894mk' data-plan-thumb-url='https://assets.architecturaldesigns.com/plan_assets/366377745/thumb/70894MK_Render001_1723579169.webp' data-plan-user-comment='' id='fav-366377745' type='button'></button>
+</div>
+<div class='plan-sub-header'>
+<div class='plan-caption'>
+<a href="/house-plans/3-bed-mountain-a-frame-house-plan-with-two-story-great-room-2321-sq-ft-70894mk"><div class='plan-number'>70894MK</div>
+<div class='text'>Plan Number</div>
+</a></div>
+<div class='plan-pricing'>
+<div>
+<label>starting at</label>
+<span class='orig-prc orig-disc-prc'>$1,000</span>
+</div>
+<span class='disc-prc'>$850</span>
+</div>
+</div>
+<a aria-label='70894MK: 3-Bed Mountain A-Frame House Plan with Two Story Great Room - 2321 Sq Ft' data-turbolinks='false' href='/house-plans/3-bed-mountain-a-frame-house-plan-with-two-story-great-room-2321-sq-ft-70894mk'>
+<ul class='info'>
+<li>
+<span class='h3 ft-supm-bg'>2,321</span>
+<p class='ft-sml-bg'>Sq. Ft.</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>3</span>
+<p class='ft-sml-bg'>Bed</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>2.5</span>
+<p class='ft-sml-bg'>Bath</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>2</span>
+<p class='ft-sml-bg'>Story</p>
+</li>
+</ul>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+  <div class="container featured-module">
+    <div class="featured-post">
+        <div class="featured-content">
+          <div class="content">
+            <div class="content-heading">
+              Master Bedroom Decor: 5 Inspiring Designs with Tours
+            </div>
+            <div class="content-description">
+              When you think of home, the master bedroom is often the first space that comes to mind. It’s a cozy, private place where you can relax after a long day. With the right master bedroom decor, this space becomes more than just a place to sleep—it transforms into your personal retreat, a spot to unwind and recharge. To inspire your design ideas, we’re excited to share five beautiful house plans. Each one features a master bedroom with its own unique style, from simple and serene to bold and moody. Plus, you can take an interactive tour of each plan to see how the bedrooms fit into the rest of the home.
+            </div>
+              <div class="content-action right-attr">
+                <a class="content-button" href="https://blog.architecturaldesigns.com/master-bedroom-decor-5-inspiring-beautiful-designs-with-tours/">
+                  <span class="button-text">Read More</span>
+</a>              </div>
+          </div>
+            <div class="attribution right-attr">
+              <div class="display_date">Sep 17, 2024</div>
+              <div class="from-text">Blog Post</div>
+              <div class="created-by">Ana Coddington</div>
+            </div>
+        </div>
+        <div class="featured-asset" style="background-image: url('https://assets.architecturaldesigns.com/image_assets/2/webp/68505VR-interior-05_68505VR-MASTER-SUITE-1-01_1726581041.webp')"></div>
+    </div>
+  </div>
+
+<div class='container card-sliders'>
+<div class='plan-carousal-wrapper' id='new_plans_section'>
+<div class='title-view-more'>
+<div class='title'>New Plans</div>
+<a data-turbolinks="false" class="view-more" href="/house-plans/collections/new?sort=newest"><div class='view-more-text'>View More</div>
+</a></div>
+<div class='plans-block'>
+<div class='u-spacing-y-loosest'></div>
+<div class='plan-card col-xs-12 col-sm-4 col-md-3 col-lg-3'>
+<div class='plan-box main-plan-325006235'>
+<div class='plan-badges'>
+</div>
+<div class='plan-favorite'>
+<button aria-label='favorite Modern Farmhouse Plan with Bonus Room and Man Cave - 2591 Sq Ft' class='plan-box-favorite favorite-btn large-gray-star fav-325006235 is_not_favorite' data-plan-id='325006235' data-plan-number='64506SC' data-plan-slug='modern-farmhouse-plan-with-bonus-room-and-man-cave-2591-sq-ft-64506sc' data-plan-thumb-url='https://assets.architecturaldesigns.com/plan_assets/325006235/thumb/64506SC_render_1599663092.webp' data-plan-user-comment='' id='fav-325006235' type='button'></button>
+</div>
+<div class='plan-sub-header'>
+<div class='plan-caption'>
+<a href="/house-plans/modern-farmhouse-plan-with-bonus-room-and-man-cave-2591-sq-ft-64506sc"><div class='plan-number'>64506SC</div>
+<div class='text'>Plan Number</div>
+</a></div>
+<div class='plan-pricing'>
+<div>
+<label>starting at</label>
+<span class='orig-prc'>$1,395</span>
+</div>
+<span class='disc-prc'>&nbsp;</span>
+</div>
+</div>
+<a aria-label='64506SC: Modern Farmhouse Plan with Bonus Room and Man Cave - 2591 Sq Ft' data-turbolinks='false' href='/house-plans/modern-farmhouse-plan-with-bonus-room-and-man-cave-2591-sq-ft-64506sc'>
+<ul class='info'>
+<li>
+<span class='h3 ft-supm-bg'>2,591</span>
+<p class='ft-sml-bg'>Sq. Ft.</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>3 - 5</span>
+<p class='ft-sml-bg'>Bed</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>4+</span>
+<p class='ft-sml-bg'>Bath</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>1</span>
+<p class='ft-sml-bg'>Story</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>
+3
+</span>
+<p class='ft-sml-bg'>Cars</p>
+</li>
+</ul>
+</a>
+</div>
+</div>
+<div class='plan-card col-xs-12 col-sm-4 col-md-3 col-lg-3'>
+<div class='plan-box main-plan-325005548'>
+<div class='plan-badges'>
+</div>
+<div class='plan-favorite'>
+<button aria-label='favorite Farmhouse Plan with Keeping Room and an Outdoor Kitchen - 3741 Sq Ft' class='plan-box-favorite favorite-btn large-gray-star fav-325005548 is_not_favorite' data-plan-id='325005548' data-plan-number='510148WDY' data-plan-slug='farmhouse-plan-with-keeping-room-and-an-outdoor-kitchen-3741-sq-ft-510148wdy' data-plan-thumb-url='https://assets.architecturaldesigns.com/plan_assets/325005548/thumb/510148WDY_render-white_1589223545.webp' data-plan-user-comment='' id='fav-325005548' type='button'></button>
+</div>
+<div class='plan-sub-header'>
+<div class='plan-caption'>
+<a href="/house-plans/farmhouse-plan-with-keeping-room-and-an-outdoor-kitchen-3741-sq-ft-510148wdy"><div class='plan-number'>510148WDY</div>
+<div class='text'>Plan Number</div>
+</a></div>
+<div class='plan-pricing'>
+<div>
+<label>starting at</label>
+<span class='orig-prc'>$1,500</span>
+</div>
+<span class='disc-prc'>&nbsp;</span>
+</div>
+</div>
+<a aria-label='510148WDY: Farmhouse Plan with Keeping Room and an Outdoor Kitchen - 3741 Sq Ft' data-turbolinks='false' href='/house-plans/farmhouse-plan-with-keeping-room-and-an-outdoor-kitchen-3741-sq-ft-510148wdy'>
+<ul class='info'>
+<li>
+<span class='h3 ft-supm-bg'>3,741</span>
+<p class='ft-sml-bg'>Sq. Ft.</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>5 - 6</span>
+<p class='ft-sml-bg'>Bed</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>4.5</span>
+<p class='ft-sml-bg'>Bath</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>2</span>
+<p class='ft-sml-bg'>Story</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>
+3
+</span>
+<p class='ft-sml-bg'>Cars</p>
+</li>
+</ul>
+</a>
+</div>
+</div>
+<div class='plan-card col-xs-12 col-sm-4 col-md-3 col-lg-3'>
+<div class='plan-box main-plan-364858345 has-video'>
+<div class='plan-badges'>
+<a class="plan-tour-icon" title="360&deg; Tour of 623401DJ" data-turbolinks="false" href="/house-plans/3-bedroom-craftsman-house-plan-oversized-3-car-garage-1689-sq-ft-623401dj/virtual_tour"><span class='tour-icon' title='360&amp;deg; Tour'></span>
+<span class='media-txt'>Tour</span>
+</a><a data-turbolinks="false" class="plan-video-icon plan-feature-badge" aria-label="Plan Video of - 623401DJ: 3-Bedroom Craftsman House Plan Oversized 3-Car Garage - 1689 Sq Ft" href="/house-plans/3-bedroom-craftsman-house-plan-oversized-3-car-garage-1689-sq-ft-623401dj?video=true"></a>
+</div>
+<div class='plan-favorite'>
+<button aria-label='favorite 3-Bedroom Craftsman House Plan Oversized 3-Car Garage - 1689 Sq Ft' class='plan-box-favorite favorite-btn large-gray-star fav-364858345 is_not_favorite' data-plan-id='364858345' data-plan-number='623401DJ' data-plan-slug='3-bedroom-craftsman-house-plan-oversized-3-car-garage-1689-sq-ft-623401dj' data-plan-thumb-url='https://assets.architecturaldesigns.com/plan_assets/364858345/thumb/623401DJ_render_001_1720640982.webp' data-plan-user-comment='' id='fav-364858345' type='button'></button>
+</div>
+<div class='plan-sub-header'>
+<div class='plan-caption'>
+<a href="/house-plans/3-bedroom-craftsman-house-plan-oversized-3-car-garage-1689-sq-ft-623401dj"><div class='plan-number'>623401DJ</div>
+<div class='text'>Plan Number</div>
+</a></div>
+<div class='plan-pricing'>
+<div>
+<label>starting at</label>
+<span class='orig-prc orig-disc-prc'>$1,300</span>
+</div>
+<span class='disc-prc'>$1,105</span>
+</div>
+</div>
+<a aria-label='623401DJ: 3-Bedroom Craftsman House Plan Oversized 3-Car Garage - 1689 Sq Ft' data-turbolinks='false' href='/house-plans/3-bedroom-craftsman-house-plan-oversized-3-car-garage-1689-sq-ft-623401dj'>
+<ul class='info'>
+<li>
+<span class='h3 ft-supm-bg'>1,689</span>
+<p class='ft-sml-bg'>Sq. Ft.</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>3</span>
+<p class='ft-sml-bg'>Bed</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>2</span>
+<p class='ft-sml-bg'>Bath</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>1</span>
+<p class='ft-sml-bg'>Story</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>
+3
+</span>
+<p class='ft-sml-bg'>Cars</p>
+</li>
+</ul>
+</a>
+</div>
+</div>
+<div class='plan-card col-xs-12 col-sm-4 col-md-3 col-lg-3'>
+<div class='plan-box main-plan-367489628'>
+<div class='plan-badges'>
+</div>
+<div class='plan-favorite'>
+<button aria-label='favorite 3-Bed Barndominium House Plan with Wrap-Around Porch - 1635 Sq Ft' class='plan-box-favorite favorite-btn large-gray-star fav-367489628 is_not_favorite' data-plan-id='367489628' data-plan-number='51979HZ' data-plan-slug='3-bed-barndominium-house-plan-with-wrap-around-porch-1635-sq-ft-51979hz' data-plan-thumb-url='https://assets.architecturaldesigns.com/plan_assets/367489628/thumb/51979HZ_Render001_1726751354.webp' data-plan-user-comment='' id='fav-367489628' type='button'></button>
+</div>
+<div class='plan-sub-header'>
+<div class='plan-caption'>
+<a href="/house-plans/3-bed-barndominium-house-plan-with-wrap-around-porch-1635-sq-ft-51979hz"><div class='plan-number'>51979HZ</div>
+<div class='text'>Plan Number</div>
+</a></div>
+<div class='plan-pricing'>
+<div>
+<label>starting at</label>
+<span class='orig-prc orig-disc-prc'>$1,295</span>
+</div>
+<span class='disc-prc'>$1,100.75</span>
+</div>
+</div>
+<a aria-label='51979HZ: 3-Bed Barndominium House Plan with Wrap-Around Porch - 1635 Sq Ft' data-turbolinks='false' href='/house-plans/3-bed-barndominium-house-plan-with-wrap-around-porch-1635-sq-ft-51979hz'>
+<ul class='info'>
+<li>
+<span class='h3 ft-supm-bg'>1,635</span>
+<p class='ft-sml-bg'>Sq. Ft.</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>3</span>
+<p class='ft-sml-bg'>Bed</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>2.5</span>
+<p class='ft-sml-bg'>Bath</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>1</span>
+<p class='ft-sml-bg'>Story</p>
+</li>
+<li>
+<span class='h3 ft-supm-bg'>
+2
+</span>
+<p class='ft-sml-bg'>Cars</p>
+</li>
+</ul>
+</a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class='container card-sliders'>
+<div class='plan-carousal-wrapper' id='client_photos_section'>
+<div class='title-view-more'>
+<div class='title'>Build Gallery</div>
+<a data-turbolinks="false" class="view-more" href="/house-plans/collections/client-builds"><div class='view-more-text'>View 2,580 More</div>
+</a></div>
+<div class='sub-title'>See and hear from existing customers with real photos, videos, and reviews.</div>
+<div class='plans-block'>
+<div class='u-spacing-y-loosest'></div>
+<div class='plan-card col-xs-12 col-sm-4 col-md-3 col-lg-3'>
+<div class='plan-box client-build-plan-box'>
+<a class="box" href="/house-plans/compact-modern-mountain-house-plan-with-wraparound-deck-68909vr/client_photo_albums/3396"><div class='image-box br-8 async-bg-image' data-src='https://assets.architecturaldesigns.com/plan_assets/337186546/thumb/68909VR_Edit1_1726605157.webp'></div>
+<div class='card-sub-header'>
+<div class='album-title'>
+Modern House Plan 68909VR Comes to Life in Kentucky
+</div>
+</div>
+<ul class='info'>
+<li>
+<span class='h3 ft-supm-bg'>14</span>
+<p class='ft-sml-bg'>Photos</p>
+</li>
+</ul>
+</a></div>
+</div>
+<div class='plan-card col-xs-12 col-sm-4 col-md-3 col-lg-3'>
+<div class='plan-box client-build-plan-box'>
+<a class="box" href="/house-plans/brick-and-stone-house-plan-with-two-master-suites-3183-sq-ft-68408vr/client_photo_albums/3395"><div class='image-box br-8 async-bg-image' data-src='https://assets.architecturaldesigns.com/plan_assets/68408/thumb/68408VR-Tennessee-01_1726581307.webp'></div>
+<div class='card-sub-header'>
+<div class='album-title'>
+House Plan 68408VR Comes to Life in Tennessee
+</div>
+</div>
+<ul class='info'>
+<li>
+<span class='h3 ft-supm-bg'>8</span>
+<p class='ft-sml-bg'>Photos</p>
+</li>
+</ul>
+</a></div>
+</div>
+<div class='plan-card col-xs-12 col-sm-4 col-md-3 col-lg-3'>
+<div class='plan-box client-build-plan-box'>
+<a class="box" href="/house-plans/2-bed-house-plan-with-vaulted-interior-1273-sq-ft-68536vr/client_photo_albums/3394"><div class='image-box br-8 async-bg-image' data-src='https://assets.architecturaldesigns.com/plan_assets/324999323/thumb/68536VR-TN-01_1726580594.webp'></div>
+<div class='card-sub-header'>
+<div class='album-title'>
+Country House 68536VR Comes to Life in Tennessee
+</div>
+</div>
+<ul class='info'>
+<li>
+<span class='h3 ft-supm-bg'>23</span>
+<p class='ft-sml-bg'>Photos</p>
+</li>
+</ul>
+</a></div>
+</div>
+<div class='plan-card col-xs-12 col-sm-4 col-md-3 col-lg-3'>
+<div class='plan-box client-build-plan-box'>
+<a class="box" href="/house-plans/three-bed-country-home-plan-with-two-master-suites-68434vr/client_photo_albums/3393"><div class='image-box br-8 async-bg-image' data-src='https://assets.architecturaldesigns.com/plan_assets/324990487/thumb/68434VR-Tennessee-01_1726579725.webp'></div>
+<div class='card-sub-header'>
+<div class='album-title'>
+House Plan 68434VR Comes to Life in Tennessee
+</div>
+</div>
+<ul class='info'>
+<li>
+<span class='h3 ft-supm-bg'>17</span>
+<p class='ft-sml-bg'>Photos</p>
+</li>
+</ul>
+</a></div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer id="footer">
+  <!-- Same footer used for customer facing site and designer portal layout -->
+<div class='top-footer'>
+<div class='container'>
+<h5>ABOUT</h5>
+<div class='links'>
+<div class='link-box'>
+<a href="https://www.architecturaldesigns.com/about-us">Our Story</a>
+<a href="https://www.architecturaldesigns.com/pricing">Pricing</a>
+<a href="https://www.architecturaldesigns.com/reviews">Reviews</a>
+</div>
+<div class='link-box'>
+<a href="https://www.architecturaldesigns.com/testimonials">Testimonials</a>
+<a href="https://www.architecturaldesigns.com/copyright">Copyright</a>
+<a href="https://www.architecturaldesigns.com/frequently-asked-questions">FAQ</a>
+</div>
+<div class='link-box'>
+<a href="https://www.architecturaldesigns.com/contact-us">Contact</a>
+<a target="_blank" href="https://blog.architecturaldesigns.com">Blog</a>
+</div>
+</div>
+</section>
+</div>
+<div class='newsletter-section'>
+<div class='logo'>
+<img alt='Architectural Designs' class='img-responsive' src='https://www.architecturaldesigns.com/assets/logo-0baf58dffe24002fac28656c197c0a8e85c6725a2e01f4b4fae66e7a061726d8.png' title='Architectural Designs'>
+</div>
+<div class='numbers'>
+<div class='country'>
+UNITED STATES & CANADA
+<span>
+Call Center available 24/7
+</span>
+<span>
+1-800-854-7852
+</span>
+</div>
+<div class='country'>
+ELSEWHERE
+<span>
+1-262-521-4596
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='bottom-footer'>
+<div class='container'>
+<div class='copy-right'>
+All house plans are copyright &copy;2024 by the architects and designers represented on our web site
+</div>
+<div class='links'>
+<a href="https://www.architecturaldesigns.com/terms-and-conditions">Terms</a>
+<a href="https://www.architecturaldesigns.com/privacy-policy">Privacy Policy</a>
+</div>
+</div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="newsletter_modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">&nbsp;</h4>
+      </div>
+      <div class="modal-body">
+        <!-- Begin Mailchimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+          #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+          <form action="https://architecturaldesigns.us3.list-manage.com/subscribe/post?u=3ef17b2ce39dcfbeada386dc0&amp;id=c9577b93c4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <h2 style="margin:0;">Subscribe to Newsletter</h2>
+              <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-FNAME">First Name  <span class="asterisk">*</span></label>
+                <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+              </div>
+              <div class="mc-field-group">
+                <label for="mce-LNAME">Last Name </label>
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+              </div>
+        
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3ef17b2ce39dcfbeada386dc0_c9577b93c4" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+            <div><p class="ctct-form-footer">By submitting this form, you are granting: Architectural Designs, Inc., 501 Kings Highway East, Suite 303, Fairfield, CT 06825, United States, http://www.architecturaldesigns.com permission to email you. You may unsubscribe via the link found at the bottom of every email.</p></div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script>
+  if ($("#newletter_email")) {
+    $("body").on("click", "#newletter_go", function (e) {
+      $("#mce-EMAIL").val($("#newletter_email").val());
+      $("#newsletter_modal").modal("show");
+    });
+    $("body").on("keypress", "#newletter_email", function (e) {
+      const key = e.which;
+      // enter key event
+      if (key === 13) {
+        $("#mce-EMAIL").val($("#newletter_email").val());
+        $("#newsletter_modal").modal("show");
+        return;
+      }
+    });
+  }
+</script>
+
+</footer>
+
+<div aria-labelledby='siteAlertModal' class='modal fade' id='siteAlertModal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header'>
+<h3 class='h3 modal-title text-center header-txt'>Alert!</h3>
+</div>
+<div class='modal-body'>
+<div>
+<p class='body-txt'></p>
+</div>
+</div>
+<div class='modal-footer'>
+<a data-dismiss="modal" class="btn btn-primary" href="javascript:void(0)">Ok</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class='modal fade' id='collection_favorite_modal' role='dialog' tabindex='-1'>
+<div class='modal-dialog favorite-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header'>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true'>&times;</span>
+</button>
+<h4 class='modal-title'></h4>
+</div>
+<div class='modal-body'>
+<input type="hidden" name="main_fav" id="main-fav-hid" value="" class="main-fav-hid" autocomplete="off" />
+<div class='favorite-columns'>
+<div class='collection-left-wrapper'>
+<img class="plan-thumb-img" src="" />
+<footer class='clearfix plan-footer'>
+<p class='pull-right'>
+PLAN
+<span class='h4'></span>
+</p>
+</footer>
+<div class='form-group margin-top-10 notes-section'>
+<label>Notes</label>
+<input type="hidden" name="original_collection_comment" id="original_collection_comment" autocomplete="off" />
+<textarea name="collection[comment]" id="collection_comment" rows="8" class="form-control collection-comment" placeholder="Add notes here">
+</textarea>
+</div>
+<div class='notes-action-panel text-center display-none'>
+<div class='notice'></div>
+<div class='note-btns'>
+<a id="save_collection_comment" class="btn btn-primary btn-save-modified-comment" href="javascript:void(0);">SAVE</a>
+<a class="btn btn-cancel-modify-comment" id="cancel_editing_comment" href="javascript:void(0);">CANCEL</a>
+</div>
+<span class='saving-comment-loader' style='text-align: center; display: none;'>
+<div class='text-center'>
+<img style="width: 35px;" src="https://www.architecturaldesigns.com/assets/new_icons/ajax-loader-0eddaab3b8cb0b15d81d62e5ae5960329c3e576ea78dc321b20734ab20271847.gif" />
+</div>
+</span>
+</div>
+</div>
+<div class='name-list'>
+<div class='btn-wrapper'>
+<a class='btn btn-default all-favorites-btn add-plan-to-favorites' href='javascript:void(0);'>Add plan to favorites</a>
+<h4>Added to favorites!</h4>
+</div>
+<span class='groups-loader' style='text-align: center; display: none;'>
+<div class='text-center'>
+<img style="width: 35px;" src="https://www.architecturaldesigns.com/assets/new_icons/ajax-loader-0eddaab3b8cb0b15d81d62e5ae5960329c3e576ea78dc321b20734ab20271847.gif" />
+</div>
+</span>
+<div class='collections-list'></div>
+<div class='create-group-box'>
+<form id="create_collection" action="/house-plan-collections/create_collection" accept-charset="UTF-8" data-remote="true" method="post"><input type="hidden" name="authenticity_token" value="X-S7NPF_ilYh-H0QvVaUTrvzIEF9SKD2EQ0nEbYLcw3flYHYUKdOyJK4VPwgLgouvdmY1xwk8jCNJhti0Yl41Q" autocomplete="off" /><input type="hidden" name="target_plan_id" id="target_plan_id" autocomplete="off" />
+<input placeholder="Enter collection name..." required="required" type="text" value="" name="group[name]" id="group_name" />
+<input type="submit" name="commit" value="CREATE COLLECTION" class="btn btn-primary quick-create-group" data-disable-with="CREATE COLLECTION" />
+</form></div>
+<div class='create-group-link'>
+<a class="btn btn-primary new-collection-btn" href="javascript:void(0);">CREATE NEW COLLECTION</a>
+</div>
+<div class='unfavorite-link'>
+<a class="btn btn-default un-favorite-plan" href="javascript:void(0)">Unfavorite</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class='modal fade' id='collection_unfavorite_modal' role='dialog' tabindex='-1'>
+<div class='modal-dialog' role='document'>
+<div class='modal-content'>
+<div class='modal-header'>
+<button aria-label='Close' class='close' data-dismiss='modal' type='button'>
+<span aria-hidden='true'>&times;</span>
+</button>
+<h4 class='modal-title'>Alert!</h4>
+</div>
+<div class='modal-body'>
+<p>Are you sure you want to remove this plan from your favorites?</p>
+<p>It will be removed from all of your collections.</p>
+</div>
+<div class='modal-footer'>
+<a class="btn btn-secondary remove-plan-from-favorites" href="javascript:void(0);">Unfavorite</a>
+</div>
+</div>
+</div>
+</div>
+
+<div aria-labelledby="rewardsProgramModal" class="modal fade" id="rewardsProgramModal" role="dialog" tabindex="-1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form action="/users/update_user_rewards_program_settings" accept-charset="UTF-8" data-remote="true" method="post"><input type="hidden" name="authenticity_token" value="fRCDNvCMRuixHSSCOM7xGPjbLvngfuvHDaTQUyDhZguLd_25Iqp55D5aik3V-jFyzKx6EjkDthCw814a1x5qEQ" autocomplete="off" />
+        <div class="modal-header">
+          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="rewards-program-header">Join our Rewards Program</div>
+        </div>
+        <div class="modal-body">
+          <p class="body-txt">
+            Sign up to receive Exclusive discounts
+          </p>
+          <div class="professional-builder">
+            <input type="radio" name="rewards_user_type" id="rewards_user_type_professional_builder" value="professional_builder" class="custom-control-input" />
+            <label for="rewards_user_type_professional_builder">I am a professional builder</label>
+            <div class="row professional-builder-fields" style="display:none;">
+              <div class="col-sm-12 margin-top-10">
+                <input type="text" name="professional_builder_user_name" id="professional_builder_user_name" class="form-control rewards-program-field" autocomplete="off" placeholder="First and Last Name" />
+              </div>
+              <div class="col-sm-12 margin-top-10">
+                <input type="text" name="professional_builder_company_name" id="professional_builder_company_name" class="form-control rewards-program-field" autocomplete="off" placeholder="Company Name" />
+              </div>
+              <div class="col-sm-12 margin-top-10">
+                <input type="text" name="professional_builder_contractor_license_number" id="professional_builder_contractor_license_number" class="form-control rewards-program-field" autocomplete="off" placeholder="Contractor License Number" />
+              </div>
+            </div>
+          </div>
+          <div class="real-estate-agent">
+            <input type="radio" name="rewards_user_type" id="rewards_user_type_real_estate_agent" value="real_estate_agent" class="custom-control-input" />
+            <label for="rewards_user_type_real_estate_agent">I am a real estate agent</label>
+            <div class="row real-estate-agent-fields" style="display:none;">
+              <div class="col-sm-12 margin-top-10">
+                <input type="text" name="real_estate_agent_user_name" id="real_estate_agent_user_name" class="form-control rewards-program-field" autocomplete="off" placeholder="First and Last Name" />
+              </div>
+              <div class="col-sm-12 margin-top-10">
+                <input type="text" name="real_estate_agent_company_name" id="real_estate_agent_company_name" class="form-control rewards-program-field" autocomplete="off" placeholder="Company Name" />
+              </div>
+            </div>
+          </div>
+          <div>
+          <input type="radio" name="rewards_user_type" id="rewards_user_type_none" value="none" class="custom-control-input" checked="checked" />
+          <label for="rewards_user_type_none">I am neither</label>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <input type="submit" name="commit" value="CONTINUE" class="btn-new-submit" data-disable-with="CONTINUE" />
+        </div>
+</form>    </div>
+  </div>
+</div>
+
+<div aria-labelledby="smallModal" class="modal fade" id="extWallInfoModal" role="dialog" tabindex="-1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div aria-hidden="true" class="big-cross" data-dismiss="modal" style="font-weight:none !important; color:#000 !important; font-size: 2.0em !important; float: right; margin-top: -.5em; cursor: pointer;" type="button">&times;</div>
+        <p class="h3 modal-title">Block / CMU (main floor)</p>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <p>Most concrete block (CMU) homes have 2 x 4 or 2 x 6 exterior walls on the 2nd story.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="users-device-size">
+  <div class="visible-xs" id="xs"></div>
+  <div class="visible-sm" id="sm"></div>
+  <div class="visible-md" id="md"></div>
+  <div class="visible-lg" id="lg"></div>
+</div>
+
+  <!-- Start of Linkedin JS -->
+  <script type="text/javascript">
+    _linkedin_partner_id = "4546713";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script>
+  <script type="text/javascript">
+    (function(l) {
+    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+    window.lintrk.q=[]}
+    var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";b.async = true;
+    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b, s);})(window.lintrk);
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=4546713&fmt=gif" />
+  </noscript>
+  <!-- End of linkedin -->
+
+<script type="text/javascript"> try{(function(){ var cb = new Date().getTime(); var s = document.createElement("script"); s.defer = true; s.src = "//tag.crsspxl.com/s1.js?d=2495&cb="+cb; var s0 = document.getElementsByTagName('script')[0]; s0.parentNode.insertBefore(s, s0); })();}catch(e){} </script>
+
+<!-- Start of LiveChat (www.livechat.com) code -->
+<script type="lazyload_extJS" async="">
+  window.__lc = window.__lc || {};
+  window.__lc.license = 14746596;
+  ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+</script>
+<noscript><a href="https://www.livechat.com/chat-with/14746596/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+<!-- End of LiveChat code -->
+
+<script>
+var lazy_load_js = true;
+var lazy_load_delay_time = "4000";
+
+if (lazy_load_js) {
+  window.addEventListener("DOMContentLoaded", function(event) {
+    setTimeout(function() {
+      lazyload_extJS();
+      adjustFooterWithAdWidget();
+    }, lazy_load_delay_time);
+  });
+}
+
+function lazyload_extJS() {
+  console.log('inside lazyload JS call');
+  var static_script = document.querySelectorAll("script[type=lazyload_extJS]");
+  if (static_script.length < 1) {
+    return;
+  }
+  load_inline_js_single(static_script[0]);
+  lazyload_extJS();
+}
+
+function load_inline_js_single(script) {
+  console.log('calling single');
+  var s = document.createElement("script");
+  for (var i2 = 0; i2 < script.attributes.length; i2++) {
+    var attrib = script.attributes[i2];
+    if (attrib.name != "type") {
+      s.setAttribute(attrib.name, attrib.value);
+    }
+  }
+  s.innerHTML = script.innerHTML;
+  insertAfter(s, script);
+  script.parentNode.removeChild(script);
+}
+
+function insertAfter(newNode, referenceNode) {
+  referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
+
+//Add script to adjust footer height with ad widget
+function adjustFooterWithAdWidget(){
+  var adsWidgetButton = findElementsByClassPattern("publift-widget-", "-button");
+  if(adsWidgetButton.length > 0){
+    adsWidgetButton[0].addEventListener("click", adjustFooterHeight);
+    adjustFooterHeight();
+  }
+}
+
+function adjustFooterHeight(){
+  var adsWidgetContainer = findElementsByClassPattern("publift-widget-", "-container");
+  if(adsWidgetContainer.length > 0){
+    if(adsWidgetContainer[0].classList.contains('closed')){
+      document.getElementById("footer").style.marginBottom = "0px";
+    }else{
+      document.getElementById("footer").style.marginBottom = "94px";
+    }
+  }
+}
+
+function findElementsByClassPattern(startPattern, endPattern) {
+  const classPattern = new RegExp(`\\b${startPattern}.*${endPattern}\\b`);
+  const allElements = document.querySelectorAll('[class*=publift-widget-]');
+  const matchingElements = Array.from(allElements).filter(element => {
+      return Array.from(element.classList).some(className => classPattern.test(className));
+  });
+  return matchingElements;
+}
+</script>
+
+</body>
+<script type="text/javascript">
+  $(window).bind("popstate", function (event) {
+    //fix for AD-1293
+    const { state } = event.originalEvent;
+    if (state === "#search_browser_url") {
+      window.location.reload();
+    }
+  });
+  
+  function downloadAsyncImage(container_id) {
+    var async_images = container_id ? $("#" + container_id).find('.async-image, .async-bg-image') : $('.async-image, .async-bg-image');
+    $(async_images).each(function(){
+      var $img = $(this);
+      var img_url = $img.data('src');
+      if($img[0].hasAttribute("data-src-small")){
+        img_url = getBootstrapDeviceSize() == 'xs' ? $img.data('src-small') : $img.data('src-large');
+      }
+      if($img[0].hasAttribute("src")){
+        $img.attr('src', img_url);
+      }else{
+        $img.css({'background-image': 'url(' + img_url + ')'});
+      }
+      if($img[0].hasAttribute("data-fp-image")){
+        setImageDimensions($img[0]);
+      }
+    });
+  }
+
+  function setImageDimensions(currentFPImage, callback) {
+    var img = new Image();
+    img.src = $(currentFPImage).attr('src');
+    img.onload = function() {
+      console.log("fpImgSrc: " + img.src + " width: " + this.width + " height: " + this.height );
+      $(currentFPImage).attr('width', this.width);
+      $(currentFPImage).attr('height', this.height);
+    };
+  }
+
+  //method to return device size by script
+  function getBootstrapDeviceSize() {
+    return $('#users-device-size').find('div:visible').first().attr('id');
+  }
+  
+  $(document).ready(function(){
+    $(".img-responsive").each(function() {
+      if (!$(this).hasClass("floor-plan-img")){
+        var image = new Image();
+        image.src = $(this).attr("src");
+        if (image.naturalHeight == 0 || image.naturalWidth == 0) {
+          // do nothing
+        }
+        else if (image.naturalHeight > image.naturalWidth) {
+          $(this).removeClass("img-responsive");
+          $(this).addClass("img-responsive-vh");
+        } else if (image.naturalHeight == image.naturalWidth) {
+          $(this).removeClass("img-responsive");
+          $(this).addClass("img-responsive-sq");
+        }
+      }
+    });
+    window.is_current_user = false;
+    if("plans" == "plans" && $.inArray("home", ["show", "home"]) > -1){
+      window.favorite_ids = [];
+      window.plan_details = {};
+      window.hidden_plans_ids = {};
+      if(['home'].includes("home")){
+        window.home_flash = "false";
+      }
+    } else {
+      window.favorite_ids = undefined;
+      window.hidden_plans_ids = undefined;
+    }
+    //load deferred image
+    if("plans" === "plans" && ['search'].includes("home")) {
+      window.setTimeout(downloadAsyncImage('search_results_items'), 1000);
+    } else {
+      window.setTimeout(downloadAsyncImage, 3000);
+    }
+
+    if("false" == "true"){
+      $("#rewardsProgramModal").modal("show");
+      $.ajax({
+        url: "/users/update_show_rewards_program",
+        type: 'POST',
+        beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
+        success(response) {}
+      });
+      if("production" !== "local"){
+        if (typeof pintrk !== "undefined") {
+          pintrk('track', 'lead', {
+            lead_type: 'Signup'
+          });
+        }
+      }
+        if (typeof ttq !== "undefined") {
+          ttq.track('Subscribe', {
+            "contents": [
+              {
+                "content_type": "product_group", // string. Either product or product_group.
+                "content_name": "Reward Program"
+              }
+            ]
+          });
+        }
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'referringChannel': 'Affiliate'
+    });
+  });
+</script>
+
+</html>
